@@ -75,7 +75,7 @@ footer {
     padding: 20px;
     background-color: rgb(243, 243, 243);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 10px;
     border: 5px solid rgba(7, 74, 49, 0.7);
     margin: 40px auto;
 }
@@ -118,5 +118,5 @@ footer {
 
 .recomendacoes {
     background-color: #f0f0f0;
-    padding: 160px;
+    padding: 250px;
 }
