@@ -33,7 +33,7 @@ header {
 .logo {
     height: 80px; 
     width: auto;
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 10px;
     border-radius: 5px;
 }
@@ -123,7 +123,6 @@ footer {
 }
 
 .recomendacoes {
-    background-color: #f0f0f0;
     flex-grow: 1;
     padding: 200px;
 }
