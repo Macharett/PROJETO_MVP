@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="png" href="assets/imagens/icon.png">
 </head>
-<body>
+<body class="cadastro-page">
     <header>
         <a href="#">
             <img src="assets/imagens/logoEditora.png" alt="Logotipo UNIFESO" class="logo">
@@ -23,7 +23,33 @@
         </nav>        
     </header>
     <main>
+        <!-- Formulário de Cadastro de Publicações -->
+        <div class="retangulo1">
+            <div class="formulario">
+                <form action="processa_publicacao.php" method="post">
+                    <!-- Campo Título -->
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Digite o título da obra" required>
 
+                    <!-- Campo Autor -->
+                    <label for="titulo">Autor:</label>
+                    <input type="text" id="autor" name="autor" placeholder="Digite o autor da obra" required>
+
+                    <!-- Campo Resumo -->
+                    <label for="resumo">Resumo:</label>
+                    <textarea id="resumo" name="resumo" rows="4" placeholder="Escreva um breve resumo da obra" required></textarea>
+
+                    <!-- Campo Gênero (Texto Livre) -->
+                    <label for="genero">Gênero:</label>
+                    <input type="text" id="genero" name="genero" placeholder="Digite o gênero da obra" required>
+
+                    <!-- Campo Autoria Exclusiva -->
+                    <label>Autoria exclusiva?</label>
+                    <label><input type="radio" name="autoria_exclusiva" value="sim" required> Sim</label>
+                    <label><input type="radio" name="autoria_exclusiva" value="nao"> Não</label>
+
+                    <!-- Botão de Envio -->
+                    <button type="submit">Cadastrar Publicação</button>
     </main>
     <footer>
         <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
