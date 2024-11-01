@@ -1,10 +1,10 @@
 # MVP
 
 ## Equipe de Desenvolvimento
-**Anderson Macharett Pedrozo Rocha**
-**Carlos Vinicius de Queiroz Barroso Correa**
-**Glauber Carlos dos Santos Medeiros**
-**Thalles Alexandre Vieira Coimbra**
+- **Anderson Macharett Pedrozo Rocha**
+- **Carlos Vinicius de Queiroz Barroso Correa**
+- **Glauber Carlos dos Santos Medeiros**
+- **Thalles Alexandre Vieira Coimbra**
 
 ## Projeto Editora Unifeso
 Plataforma WEB para publicações UNIFESO
