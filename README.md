@@ -1,4 +1,4 @@
-# MVP
+# MVP - GRUPO 5
 
 ## Equipe de Desenvolvimento
 - **Anderson Macharett Pedrozo Rocha**
