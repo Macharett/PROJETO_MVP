@@ -1,4 +1,5 @@
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,16 +8,24 @@
 html, body {
     height: 100%;
     margin: 0; 
+    flex-direction: column;
+    width: 100%;
+    
+    
+    
 }
 
 body {
     display: flex; 
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-image: url("../imagens/publicacao.jpg");
+    /*background-image: url("../imagens/publicacao.jpg");*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(209, 202, 192);
+    
+   
 }
 
 header {
@@ -74,6 +83,8 @@ footer {
     text-align: center;
     padding: 1rem 0;
     width: 100%;
+    
+    
 }
 
 .retangulo1 {
@@ -127,7 +138,7 @@ footer {
 }
 
 
-<!--Pagina-Cadastro-->
+/*--Pagina-Cadastro--*/
 
 
 .cadastro-page .formulario {
@@ -160,7 +171,7 @@ footer {
 }
 
 .cadastro-page .formulario button {
-    background: linear-gradient(to right, #aaaaaa 50%, #006B64 50%);
+    background: linear-gradient(to right, #aaaaaa 50%, hsl(176, 100%, 21%) 50%);
     background-size: 200% 100%;
     background-color: left bottom;
     color: white;
@@ -176,3 +187,136 @@ footer {
     background-position: right bottom;
 
 }
+
+/*------abre----------- Div com texto na frente ---------------------*/
+
+.divLeft {
+    position: relative;
+    z-index: auto ;
+}
+
+.primeirafoto{
+    width: 100%;
+}
+
+#photo {
+   opacity: 70%;
+   width: 100%;
+}
+
+.textDiv{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    font-size: 50px;
+    width: 800px;
+    left: 550px;
+    top: 220px;
+    color: #0a0a0a;
+}
+/*------Fecha----------- Div com texto na frente ---------------------*/
+
+
+/*------Abre----------- Hover para escurecer a imagem quando passa o cursor ---------------------*/
+
+.imagem-galery {
+    border-radius: 5px;
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 80%;
+    filter: grayscale(0%);
+    color: transparent;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+}
+
+.imagem-galery:hover {
+    background-position: 30% 20%;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    filter: grayscale(90%);
+    color: #fff;
+}
+
+/*------Fecha----------- Hover para escurecer a imagem quando passa o cursor ---------------------*/
+
+.container{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: center center;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    background-color: hsl(177, 11%, 65%) 50%;
+    flex-wrap: wrap; 
+}
+
+.div-titulo{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.livro1{
+    width: 30%;
+}
+
+.container2{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: center, center;
+    margin-bottom: 0px;
+    background-color: #d3d8d8;
+    flex-wrap: wrap; 
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.livro2{
+    width: 26.3%;
+    padding: 0px;
+}
+
+.h1{
+    font-size: 80px;
+    color: #000000;
+    font-weight: 100;
+   }
+   
+.marquee{
+    background: linear-gradient(to right, #006B64 50%, #006B64 100%);
+    font-weight: 100;
+    color: aliceblue;
+}
+
+.botao{
+color: #000;
+text-decoration: none;
+
+}
+.botao:hover {
+	transform: scale(1.1);
+	transition: all 0.5s;
+	box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan,
+	0 0 100px cyan, 0 0 200px cyan, 0 0 400px cyan;
+}
+.p1{
+text-align: justify;
+padding: 10px;
+color: #000;
+}
+
+
+/*  */
+
+
+
