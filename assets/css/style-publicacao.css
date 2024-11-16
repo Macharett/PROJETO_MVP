@@ -1,0 +1,182 @@
+/* Estilo do containers */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/*  Apresentação da Publicação  */
+.container-60 {
+    width: 60%;
+    background-color: #fff;
+    padding: 10px; 
+    border-radius: 8px;
+    margin-left: 30px;
+}
+
+.publicacao-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.imagem-capa {
+    flex: 1;
+    padding: 20px;
+}
+
+.capa {
+    width: 100%;
+}
+
+.resumo-publicacao {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-publicacao {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.descricao-publicacao {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.botao-download {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #006B64;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-download:hover {
+    background-color: #004d4b;
+}
+
+/* Area de Pesquisa Lateral com sugestões  */
+.container-30 {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px; 
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+/* Estilo para pesquisa e botão pesquisa */
+.pesquisa form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.pesquisa input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pesquisa button {
+    background: linear-gradient(to right, #aaaaaa 50%, #006B64 50%);
+    background-size: 200% 100%;
+    background-color: left bottom;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-position 0.4s ease;
+}
+
+.pesquisa button:hover {
+    background-position: right bottom;
+}
+
+/* Estilo para as publicações semelhantes */
+.publicacoes-semelhantes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.publicacoes-semelhantes ul {
+    list-style: none;
+}
+
+.publicacoes-semelhantes li {
+    margin-bottom: 10px;
+}
+
+.publicacoes-semelhantes a {
+    text-decoration: none;
+}
+
+/* Estilo para a seção de comentários */
+.comentarios {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.comentarios ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comentarios li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comentarios form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.comentarios input, .comentarios textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comentarios button {
+    padding: 10px;
+    background-color: #006B64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comentarios button:hover {
+    background-color: #004d4b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-60, .container-30 {
+        width: 100%;
+    }
+}

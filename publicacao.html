@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editora Unifeso - Pesquisa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-publicacao.css">
+    <link rel="icon" type="png" href="assets/imagens/icon.png">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="index.html">
+            <img src="assets/imagens/logoEditora.png" alt="Logotipo UNIFESO" class="logo">
+        </a>
+        <h1 class="titulo"></h1>
+        <nav>
+            <!--Menus-->
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="publicacoes.html">Publicações</a></li>
+                <li><a href="cadastro.html">Cadastrar Publicação</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <!-- CONTEUDO -->
+    <main class="content-container">
+        <!-- Apresentação da Publicação -->         
+        <div class="container-60">
+            <div class="publicacao-container">
+                <div class="imagem-capa">
+                    <img src="assets/imagens/capa-publicacao.jpg" alt="Capa da Publicação" class="capa">
+                </div>
+                <div class="resumo-publicacao">
+                    <h2 class="titulo-publicacao">Título da Publicação</h2>
+                    <p class="descricao-publicacao">
+                        Resumo da publicação em si.
+                    </p>
+                    <a href="assets/pdf/publicacao-completa.pdf" class="botao-download" download>Baixar Publicação Completa</a>
+                </div>
+            </div>
+        </div>
+        <!-- Area Lateral de Pesquisa e Sugestões -->
+        <div class="container-30">
+            <!-- Pesquisa -->
+            <section class="pesquisa">
+                <form action="#" method="get" aria-label="Buscar publicações">
+                    <input type="text" id="pesquisa" name="pesquisa" placeholder="Buscar Publicações...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+            <!-- Sugestões -->
+            <section class="publicacoes-semelhantes">
+                <h3>Publicações Semelhantes</h3>
+                <ul>
+                    <li>
+                        <a href="#">Não sei o que Estou Fazendo</a>
+                        <p>Autor: Anderson - Data: 16/11/2024</p>
+                    </li>
+                    <li>
+                        <a href="#">Mas vou Continuar Tentando</a>
+                        <p>Autor: Macharett - Data: 16/11/2024</p>
+                    </li>
+                    <li>
+                        <a href="#">Precisamos incluir o Java</a>
+                        <p>Autor: AMPR - Data: 16/11/2024</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <!-- COMENTÁRIOS -->
+    <section class="comentarios">
+        <h3>Comentários</h3>
+        <ul id="lista-comentarios"></ul>
+        <form id="form-comentarios" aria-label="Adicionar comentário">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" placeholder="Escreva seu comentário" required></textarea>
+            <button type="submit">Enviar Comentário</button>
+        </form>
+    </section>
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
