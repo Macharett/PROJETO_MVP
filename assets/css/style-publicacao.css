@@ -7,7 +7,7 @@
     flex-wrap: wrap;
 }
 
-/*  Apresentação da Publicação  */
+/*  LADO ESQUERDO DA PAGINA - APRESENTAÇÃO EM SI  */
 .container-60 {
     width: 60%;
     background-color: #fff;
@@ -22,6 +22,7 @@
     max-width: 1200px;
 }
 
+/* IMAGEM DE APRESENTAÇÃO */
 .imagem-capa {
     flex: 1;
     padding: 20px;
@@ -49,6 +50,7 @@
     line-height: 1.5;
 }
 
+/* PRECISA DE ALTERAÇÃO */
 .botao-download {
     display: inline-block;
     text-decoration: none;
@@ -87,6 +89,7 @@
     border-radius: 5px;
 }
 
+/* BOTÃO PESQUISAR */
 .pesquisa button {
     background: linear-gradient(to right, #aaaaaa 50%, #006B64 50%);
     background-size: 200% 100%;

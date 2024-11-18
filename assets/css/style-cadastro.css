@@ -1,0 +1,49 @@
+/*--Pagina-Cadastro--*/
+
+.cadastro-page .formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-page .formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.cadastro-page .formulario input[type="text"],
+.cadastro-page .formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.cadastro-page .formulario button {
+    background: linear-gradient(to right, #aaaaaa 50%, hsl(176, 100%, 21%) 50%);
+    background-size: 200% 100%;
+    background-color: left bottom;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-position 0.4s ease
+}
+
+.cadastro-page .formulario button:hover {
+    background-position: right bottom;
+
+}
+
+/* Conteienr Formulário */
+#Cadastro-Conteiner {
+    width: 430px;
+}
