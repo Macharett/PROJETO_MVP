@@ -172,6 +172,74 @@
     background-color: #004d4b;
 }
 
+/* Contêiner principal */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 0 auto; /* Garante centralização horizontal na página */
+}
+
+
+/* Botões de navegação */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+/* Wrapper para esconder o overflow */
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+/* Itens do carrossel */
+.carousel-item {
+    flex: 0 0 25%; /* Cada item ocupa 25% do espaço visível (4 por vez) */
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .content-container {
