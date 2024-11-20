@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editora Unifeso - Pesquisa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-detalhes.css">
+    <link rel="icon" type="png" href="assets/imagens/icon.png">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="index.html">
+            <img src="assets/imagens/logoEditora.png" alt="Logotipo UNIFESO" class="logo">
+        </a>
+        <h1 class="titulo"></h1>
+        <nav>
+            <!--Menus-->
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="publicacao.html">Publicações</a></li>
+                <li><a href="cadastro.html">Cadastrar Publicação</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <!-- TÍTULO DA PÁGINA -->
+        <h1 class="titulo">TITULO DA PUBLICACAO</h1>
+    </header>
+    <!-- CONTEUDO -->
+    <main class="content-container">
+        <!-- Apresentação da Publicação -->         
+        <div class="container-60">
+            <div class="publicacao-container">
+                <div class="imagem-capa">
+                    <img src="assets/imagens/publicacao1.jpg" alt="Capa da Publicação" class="capa">
+                </div>
+                <div class="resumo-publicacao">
+                    <h2 class="titulo-publicacao">"DISCURSOS SOBRE LEITURA ENTRE PROFESSORES"</h2>
+                    <p class="descricao-publicacao">
+                        "Este estudo aborda a importância da 
+                        leitura na formação docente e o impacto da prática
+                        de leitura nas avaliações de educação básica no
+                        Brasil. A pesquisa destaca a necessidade de repensar
+                        a formação dos professores, considerando a leitura
+                        como atividade essencial para o ensino e aprendizagem.
+                        Analisa como a falta de leitura por parte dos educadores
+                        afeta o desempenho dos alunos e propõe soluções para
+                        melhorar a qualidade da educação, com foco no desenvolvimento
+                        de metodologias e políticas públicas eficazes."
+                    </p>
+                    <a href="assets/pdf/publicacao1.pdf" class="botao-download" download>Baixar Publicação</a>
+                </div>
+            </div>
+        </div>
+        <!-- Area Lateral de Pesquisa e Sugestões -->
+        <div class="container-30">
+            <!-- Pesquisa -->
+            <section class="pesquisa">
+                <form action="#" method="get" aria-label="Buscar publicações">
+                    <input type="text" id="pesquisa" name="pesquisa" placeholder="Buscar Publicações...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+            <!-- Sugestões -->
+            <section class="publicacoes-semelhantes">
+                <h3>Mais Acessadas</h3>
+                <ul>
+                    <li>
+                        <a href="#">Não sei o que Estou Fazendo</a>
+                        <p>Autor: Anderson - Data: 16/11/2024</p>
+                    </li>
+                    <li>
+                        <a href="#">Mas vou Continuar Tentando</a>
+                        <p>Autor: Macharett - Data: 16/11/2024</p>
+                    </li>
+                    <li>
+                        <a href="#">Precisamos incluir o Java</a>
+                        <p>Autor: AMPR - Data: 16/11/2024</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- COMENTÁRIOS -->
+        <section class="comentarios">
+            <!-- Formulário para adicionar comentário -->
+            <h3>Adicionar Comentário</h3>
+            <form>
+                <textarea placeholder="Adicione um comentário..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        <!-- Comentário com Avaliação -->
+        </section>
+        <section class="comentarios">
+        <h2>Comentários e Avaliações</h2>
+        <div class="comentarios">         
+            <div class="comentario-header">
+                <div class="usuario-info">
+                    <img src="assets/imagens/usuario1.png" alt="Foto do autor" class="foto-autor">
+                    <div>
+                        <p class="nome-autor">João Silva</p>
+                        <p class="data-comentario">15 de Novembro, 2024</p>
+                    </div>
+                </div>
+                <div class="avaliacao">
+                    <span>★★★★☆</span>
+                </div>
+            </div>
+            <p>Esse artigo foi muito informativo! Achei a abordagem sobre o tema inovadora, e os exemplos dados são ótimos.</p>
+        </div>        
+        <div class="comentarios">
+            <div class="comentario-header">
+                <div class="usuario-info">
+                    <img src="assets/imagens/usuario2.png" alt="Foto do autor" class="foto-autor">
+                    <div>
+                        <p class="nome-autor">Maria Oliveira</p>
+                        <p class="data-comentario">14 de Novembro, 2024</p>
+                    </div>
+                </div>
+                <div class="avaliacao">
+                    <span>★★★☆☆</span>
+                </div>
+            </div>
+            <p>O artigo foi interessante, mas senti que poderia ser mais profundo em alguns pontos. No geral, gostei.</p>
+        </div>
+        </section>        
+    </main>
+    
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
