@@ -2,18 +2,19 @@
 .content-container {
     display: flex;
     justify-content: space-between;
-    gap: 10px; 
+    gap: 20px; 
     padding: 20px;
     flex-wrap: wrap;
 }
 
 /*  LADO ESQUERDO DA PAGINA - APRESENTAÇÃO EM SI  */
 .container-60 {
-    width: 60%;
+    flex: 3;
+    min-width: 60%;
     background-color: #fff;
-    padding: 10px; 
+    padding: 15px; 
     border-radius: 8px;
-    margin-left: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .publicacao-container {
@@ -30,6 +31,8 @@
 
 .capa {
     width: 100%;
+    aspect-ratio: 1 / 1.414;
+    object-fit: cover;
 }
 
 .resumo-publicacao {
@@ -42,23 +45,33 @@
 .titulo-publicacao {
     font-size: 24px;
     margin-bottom: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .descricao-publicacao {
+    text-align: justify;
     font-size: 16px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-/* PRECISA DE ALTERAÇÃO */
+/* BOTÃO DE DOWNLOAD */
 .botao-download {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: white;
     background-color: #006B64;
-    padding: 10px;
+    text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    width: 160px;
+    height: 40px;
+    margin-left: 20px;
 }
 
 .botao-download:hover {
@@ -67,18 +80,18 @@
 
 /* Area de Pesquisa Lateral com sugestões  */
 .container-30 {
-    width: 30%;
+    flex: 1;
+    min-width: 25%;
     background-color: #fff;
     padding: 15px; 
     border-radius: 8px;
-    margin-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para pesquisa e botão pesquisa */
 .pesquisa form {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
     margin-bottom: 20px;
 }
 
@@ -87,6 +100,7 @@
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 /* BOTÃO PESQUISAR */
@@ -100,6 +114,7 @@
     border-radius: 5px;
     font-size: 16px;
     transition: background-position 0.4s ease;
+    max-width: 320px;
 }
 
 .pesquisa button:hover {
@@ -126,118 +141,96 @@
 
 /* Estilo para a seção de comentários */
 .comentarios {
-    margin: 20px auto;
+    margin-top: 10px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
-.comentarios ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.comentarios h2 {
+    font-size: 20px;
+    margin-top: 20px;
 }
 
-.comentarios li {
-    margin-bottom: 15px;
-    padding: 10px;
+.comentarios h3 {
+    font-size: 20px;
+}
+
+.comentario {
+    margin-bottom: 20px;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.comentario p {
+    font-size: 16px;
+    color: #333;
+}
+
+.comentario-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.usuario-info {
+    display: flex;
+    gap: 15px;
+}
+
+.foto-autor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nome-autor {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.data-comentario {
+    font-size: 14px;
+    color: #888;
 }
 
 .comentarios form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     margin-top: 20px;
 }
 
-.comentarios input, .comentarios textarea {
+.comentarios textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    resize: vertical;
+    min-height: 100px;
 }
 
 .comentarios button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     background-color: #006B64;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 160px;
+    height: 40px;
 }
 
 .comentarios button:hover {
     background-color: #004d4b;
-}
-
-/* Contêiner principal */
-.carousel-container {
-    position: relative;
-    width: 80%;
-    max-width: 1000px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centraliza horizontalmente */
-    margin: 0 auto; /* Garante centralização horizontal na página */
-}
-
-
-/* Botões de navegação */
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.arrow.left {
-    left: 0;
-}
-
-.arrow.right {
-    right: 0;
-}
-
-/* Wrapper para esconder o overflow */
-.carousel-wrapper {
-    overflow: hidden;
-    width: 100%;
-}
-
-/* Carrossel */
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    will-change: transform;
-}
-
-/* Itens do carrossel */
-.carousel-item {
-    flex: 0 0 25%; /* Cada item ocupa 25% do espaço visível (4 por vez) */
-    text-align: center;
-    padding: 10px;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-item img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Responsividade */
@@ -250,4 +243,19 @@
     .container-60, .container-30 {
         width: 100%;
     }
+
+    .foto-autor {
+        width: 40px;
+        height: 40px;
+    }
+
+    #comentarios h2 {
+        font-size: 20px;
+    }
+
+    .comentario p {
+        font-size: 14px;
+    }
 }
+
+

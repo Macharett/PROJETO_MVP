@@ -68,3 +68,71 @@ text-align: justify;
 padding: 10px;
 color: #000;
 }
+
+/* Contêiner principal */
+.carrossel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 0 auto; /* Garante centralização horizontal na página */
+}
+
+
+/* Botões de navegação */
+.seta {
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.seta.esquerda {
+    left: 0;
+}
+
+.seta.direita {
+    right: 0;
+}
+
+.carrossel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Carrossel */
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+/* Itens do carrossel */
+.carrossel-publicacao {
+    flex: 0 0 25%;
+    text-align: center;
+    padding: 10px;
+}
+
+.carrossel-publicacao img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrosel-publicacao img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}

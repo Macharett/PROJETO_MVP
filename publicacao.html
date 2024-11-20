@@ -33,14 +33,23 @@
         <div class="container-60">
             <div class="publicacao-container">
                 <div class="imagem-capa">
-                    <img src="assets/imagens/capa-publicacao.jpg" alt="Capa da Publicação" class="capa">
+                    <img src="assets/imagens/publicacao1.jpg" alt="Capa da Publicação" class="capa">
                 </div>
                 <div class="resumo-publicacao">
-                    <h2 class="titulo-publicacao">Título da Publicação</h2>
+                    <h2 class="titulo-publicacao">"DISCURSOS SOBRE LEITURA ENTRE PROFESSORES"</h2>
                     <p class="descricao-publicacao">
-                        Resumo da publicação em si.
+                        "Este estudo aborda a importância da 
+                        leitura na formação docente e o impacto da prática
+                        de leitura nas avaliações de educação básica no
+                        Brasil. A pesquisa destaca a necessidade de repensar
+                        a formação dos professores, considerando a leitura
+                        como atividade essencial para o ensino e aprendizagem.
+                        Analisa como a falta de leitura por parte dos educadores
+                        afeta o desempenho dos alunos e propõe soluções para
+                        melhorar a qualidade da educação, com foco no desenvolvimento
+                        de metodologias e políticas públicas eficazes."
                     </p>
-                    <a href="assets/pdf/publicacao-completa.pdf" class="botao-download" download>Baixar Publicação Completa</a>
+                    <a href="assets/pdf/publicacao1.pdf" class="botao-download" download>Baixar Publicação</a>
                 </div>
             </div>
         </div>
@@ -55,7 +64,7 @@
             </section>
             <!-- Sugestões -->
             <section class="publicacoes-semelhantes">
-                <h3>Publicações Semelhantes</h3>
+                <h3>Mais Acessadas</h3>
                 <ul>
                     <li>
                         <a href="#">Não sei o que Estou Fazendo</a>
@@ -71,20 +80,52 @@
                     </li>
                 </ul>
             </section>
-        </div>         
+        </div>
+        <!-- COMENTÁRIOS -->
+        <section class="comentarios">
+            <!-- Formulário para adicionar comentário -->
+            <h3>Adicionar Comentário</h3>
+            <form>
+                <textarea placeholder="Adicione um comentário..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        <!-- Comentário com Avaliação -->
+        </section>
+        <section class="comentarios">
+        <h2>Comentários e Avaliações</h2>
+        <div class="comentarios">         
+            <div class="comentario-header">
+                <div class="usuario-info">
+                    <img src="assets/imagens/usuario1.png" alt="Foto do autor" class="foto-autor">
+                    <div>
+                        <p class="nome-autor">João Silva</p>
+                        <p class="data-comentario">15 de Novembro, 2024</p>
+                    </div>
+                </div>
+                <div class="avaliacao">
+                    <span>★★★★☆</span>
+                </div>
+            </div>
+            <p>Esse artigo foi muito informativo! Achei a abordagem sobre o tema inovadora, e os exemplos dados são ótimos.</p>
+        </div>        
+        <div class="comentarios">
+            <div class="comentario-header">
+                <div class="usuario-info">
+                    <img src="assets/imagens/usuario2.png" alt="Foto do autor" class="foto-autor">
+                    <div>
+                        <p class="nome-autor">Maria Oliveira</p>
+                        <p class="data-comentario">14 de Novembro, 2024</p>
+                    </div>
+                </div>
+                <div class="avaliacao">
+                    <span>★★★☆☆</span>
+                </div>
+            </div>
+            <p>O artigo foi interessante, mas senti que poderia ser mais profundo em alguns pontos. No geral, gostei.</p>
+        </div>
+        </section>        
     </main>
-    <!-- COMENTÁRIOS -->
-    <section class="comentarios">
-        <h3>Comentários</h3>
-        <ul id="lista-comentarios"></ul>
-        <form id="form-comentarios" aria-label="Adicionar comentário">
-            <label for="nome">Seu nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome" required>
-            <label for="comentario">Comentário:</label>
-            <textarea id="comentario" placeholder="Escreva seu comentário" required></textarea>
-            <button type="submit">Enviar Comentário</button>
-        </form>
-    </section>
+    
     <!-- RODAPÉ -->
     <footer>
         <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
