@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/style-detalhes.css">
     <link rel="icon" type="png" href="assets/imagens/icon.png">
 </head>
+
 <body>
     <!-- CABEÇALHO -->
     <header>
@@ -29,54 +31,91 @@
     </header>
     <!-- CONTEUDO -->
     <main class="content-container">
-        <!-- Apresentação da Publicação -->         
-        <div class="container-60">
-            <div class="publicacao-container">
-                <div class="imagem-capa">
+        <div onlick="history.back()" class="campo-voltar">
+            <button onclick="history.back()" class="botao-voltar">
+                <img src="assets/imagens/icon-seta-preta.png" alt="Seta Voltar" class="icon-voltar">
+                <span class="text-voltar">Voltar</span>
+            </button>
+        </div>
+        <!-- Apresentação da Publicação -->
+        <div class="pagina-publicacao">
+            <div class="container-esquerda">
+                <div class="capa-container">
                     <img src="assets/imagens/publicacao1.jpg" alt="Capa da Publicação" class="capa">
                 </div>
-                <div class="resumo-publicacao">
-                    <h2 class="titulo-publicacao">Discursos sobre leitura entre professores.</h2>
-                    <p class="descricao-publicacao">
-                        "Este estudo aborda a importância da leitura na formação docente e o impacto 
-                        da prática de leitura nas avaliações de educação básica no Brasil. A pesquisa 
-                        destaca a necessidade de repensar a formação dos professores, considerando a 
-                        leitura como atividade essencial para o ensino e aprendizagem. Analisa como a 
-                        falta de leitura por parte dos educadores afeta o desempenho dos alunos e 
-                        propõe soluções para melhorar a qualidade da educação, com foco no 
-                        desenvolvimento de metodologias e políticas públicas eficazes."
-                    </p>
-                    <a href="assets/pdf/publicacao1.pdf" class="botao-download" download>Baixar Publicação</a>
+                <a href="detalhes1.html">
+                    <button href="detalhes1.html" class="botao-download">DOWNLOAD (10.2Mb)</button>
+                </a>
+                <div class="compatilhe-container">
+                    <div class="botoes-acoes">
+                        <h1>Compartilhe</h1>
+                        <a href="https://facebook.com" class="botao-compartilhar">
+                            <img src="assets/imagens/iconface1.png" alt="Compartilhar no Facebook"
+                                class="icone-facebook">
+                        </a>
+                        <a href="https://web.whatsapp.com/" class="botao-compartilhar">
+                            <img src="assets/imagens/iconwhats1.png" alt="Compartilhar no WhatsApp"
+                                class="icone-whatsapp">
+                        </a>
+                        <a href="https://instagram.com" class="botao-compartilhar">
+                            <img src="assets/imagens/iconinsta1.png" alt="Compartilhar no WhatsApp"
+                                class="icone-instagram">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Area Lateral de Pesquisa e Sugestões -->
-        <div class="container-30">
-            <!-- Pesquisa -->
-            <section class="pesquisa">
-                <form action="#" method="get" aria-label="Buscar publicações">
-                    <input type="text" id="pesquisa" name="pesquisa" placeholder="Buscar Publicações...">
-                    <button type="submit">Buscar</button>
-                </form>
-            </section>
-            <!-- Sugestões -->
-            <section class="publicacoes-semelhantes">
-                <h3>Mais Acessadas</h3>
-                <ul>
-                    <li>
-                        <a href="#">Não sei o que Estou Fazendo</a>
-                        <p>Autor: Anderson - Data: 16/11/2024</p>
-                    </li>
-                    <li>
-                        <a href="#">Mas vou Continuar Tentando</a>
-                        <p>Autor: Macharett - Data: 16/11/2024</p>
-                    </li>
-                    <li>
-                        <a href="#">Precisamos incluir o Java</a>
-                        <p>Autor: AMPR - Data: 16/11/2024</p>
-                    </li>
-                </ul>
-            </section>
+            <div class="container-central">
+                <h2 class="titulo-publicacao">Discursos sobre leitura entre professores.</h2>
+                <p class="descricao-publicacao">
+                    "Este estudo aborda a importância da leitura na formação docente e o impacto
+                    da prática de leitura nas avaliações de educação básica no Brasil. A pesquisa
+                    destaca a necessidade de repensar a formação dos professores, considerando a
+                    leitura como atividade essencial para o ensino e aprendizagem. Analisa como a
+                    falta de leitura por parte dos educadores afeta o desempenho dos alunos e
+                    propõe soluções para melhorar a qualidade da educação, com foco no
+                    desenvolvimento de metodologias e políticas públicas eficazes."
+                </p>
+                <hr>
+                <h3>SAIBA MAIS +</h3>
+            </div>
+            <div class="container-direita">
+                <div class="container-lateral">
+                    <div class="titulo-lateral">
+                        <h1>Dados</h1>
+                    </div>
+                    <div class="dados">
+                        <div class="linha-dado">
+                            <img src="assets/imagens/icon-escritor.png" alt="Ícone de Autor">
+                            <p>João Silva</p>
+                        </div>
+                        <div class="linha-dado">
+                            <img src="assets/imagens/icon-categoria.png" alt="Ícone de Categoria">
+                            <p>Educação</p>
+                        </div>
+                        <div class="linha-dado">
+                            <img src="assets/imagens/icon-isbn.png" alt="Ícone de ISBN">
+                            <p>978-3-16-148410-0</p>
+                        </div>
+                        <div class="linha-dado">
+                            <img src="assets/imagens/icon-data.png" alt="Ícone de Data">
+                            <p>Out.2024</p>
+                        </div>
+                    </div>
+                    <div class="titulo-lateral">
+                        <h1>Conteúdos Semelhantes</h1>
+                    </div>
+                    <div class="dados">
+                        <ul class="conteudos-semelhantes">
+                            <li><a href="https://example.com/conteudo1" target="_blank">Introdução à Educação</a></li>
+                            <hr>
+                            <li><a href="https://example.com/conteudo2" target="_blank">Dicas de Ensino para
+                                    Crianças</a></li>
+                            <hr>
+                            <li><a href="https://example.com/conteudo3" target="_blank">Educação e Tecnologia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
         </div>
         <!-- COMENTÁRIOS -->
         <section class="comentarios">
@@ -86,46 +125,49 @@
                 <textarea placeholder="Adicione um comentário..."></textarea>
                 <button type="submit">Enviar</button>
             </form>
-        <!-- Comentário com Avaliação -->
+            <!-- Comentário com Avaliação -->
         </section>
         <section class="comentarios">
-        <h2>Comentários e Avaliações</h2>
-        <div class="comentarios">         
-            <div class="comentario-header">
-                <div class="usuario-info">
-                    <img src="assets/imagens/usuario1.png" alt="Foto do autor" class="foto-autor">
-                    <div>
-                        <p class="nome-autor">João Silva</p>
-                        <p class="data-comentario">15 de Novembro, 2024</p>
+            <h2>Comentários e Avaliações</h2>
+            <div class="comentarios">
+                <div class="comentario-header">
+                    <div class="usuario-info">
+                        <img src="assets/imagens/usuario1.png" alt="Foto do autor" class="foto-autor">
+                        <div>
+                            <p class="nome-autor">João Silva</p>
+                            <p class="data-comentario">15 de Novembro, 2024</p>
+                        </div>
+                    </div>
+                    <div class="avaliacao">
+                        <span>★★★★☆</span>
                     </div>
                 </div>
-                <div class="avaliacao">
-                    <span>★★★★☆</span>
-                </div>
+                <p>Esse artigo foi muito informativo! Achei a abordagem sobre o tema inovadora, e os exemplos dados são
+                    ótimos.</p>
             </div>
-            <p>Esse artigo foi muito informativo! Achei a abordagem sobre o tema inovadora, e os exemplos dados são ótimos.</p>
-        </div>        
-        <div class="comentarios">
-            <div class="comentario-header">
-                <div class="usuario-info">
-                    <img src="assets/imagens/usuario2.png" alt="Foto do autor" class="foto-autor">
-                    <div>
-                        <p class="nome-autor">Maria Oliveira</p>
-                        <p class="data-comentario">14 de Novembro, 2024</p>
+            <div class="comentarios">
+                <div class="comentario-header">
+                    <div class="usuario-info">
+                        <img src="assets/imagens/usuario2.png" alt="Foto do autor" class="foto-autor">
+                        <div>
+                            <p class="nome-autor">Maria Oliveira</p>
+                            <p class="data-comentario">14 de Novembro, 2024</p>
+                        </div>
+                    </div>
+                    <div class="avaliacao">
+                        <span>★★★☆☆</span>
                     </div>
                 </div>
-                <div class="avaliacao">
-                    <span>★★★☆☆</span>
-                </div>
+                <p>O artigo foi interessante, mas senti que poderia ser mais profundo em alguns pontos. No geral,
+                    gostei.</p>
             </div>
-            <p>O artigo foi interessante, mas senti que poderia ser mais profundo em alguns pontos. No geral, gostei.</p>
-        </div>
-        </section>        
+        </section>
     </main>
-    
+
     <!-- RODAPÉ -->
     <footer>
         <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

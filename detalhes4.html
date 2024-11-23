@@ -29,54 +29,94 @@
     </header>
     <!-- CONTEUDO -->
     <main class="content-container">
-        <!-- Apresentação da Publicação -->         
-        <div class="container-60">
-            <div class="publicacao-container">
-                <div class="imagem-capa">
+        <!-- Apresentação da Publicação -->
+        <div onclick="history.back()" class="campo-voltar">
+            <button onclick="history.back()" class="botao-voltar">
+                <img src="assets/imagens/icon-seta-preta.png" alt="Seta Voltar" class="icon-voltar">
+                <span class="text-voltar">Voltar</span>
+            </button>
+        </div>
+        <!-- Apresentação da Publicação -->
+        <div class="pagina-publicacao">
+            <div class="container-esquerda">
+                <div class="capa-container">
                     <img src="assets/imagens/publicacao4.jpg" alt="Capa da Publicação" class="capa">
                 </div>
-                <div class="resumo-publicacao">
-                    <h2 class="titulo-publicacao">A (de)formação científica do médico</h2>
-                    <p class="descricao-publicacao">
-                        "Este trabalho investiga a (de)formação do médico, refletindo sobre a perda 
-                        do êthos, essência do ser humano e médico, intensificada pela Ciência Moderna. 
-                        Inspirados por Heidegger, analisamos as condições que levaram à crise moderna 
-                        da Medicina, apontando insuficiências no saber e fazer médicos. Propomos uma 
-                        nova paideia para médicos, não como cartilha ou currículo, mas como um discurso 
-                        terapêutico que resgate a dimensão ética e existencial da prática médica, 
-                        oferecendo novas perspectivas para a Bioética e a formação ética na Medicina."
-                    </p>
-                    <a href="assets/pdf/publicacao4.pdf" class="botao-download" download>Baixar Publicação</a>
+                <a href="detalhes4.html">
+                    <button href="detalhes4.html" class="botao-download">DOWNLOAD (21Mb)</button>
+                </a>
+                <div class="compatilhe-container">
+                    <div class="botoes-acoes">
+                        <h1>Compartilhe</h1>
+                        <a href="https://facebook.com" class="botao-compartilhar">
+                            <img src="assets/imagens/iconface1.png" alt="Compartilhar no Facebook" class="icone-facebook">
+                        </a>
+                        <a href="https://web.whatsapp.com/" class="botao-compartilhar">
+                            <img src="assets/imagens/iconwhats1.png" alt="Compartilhar no WhatsApp" class="icone-whatsapp">
+                        </a>
+                        <a href="https://instagram.com" class="botao-compartilhar">
+                            <img src="assets/imagens/iconinsta1.png" alt="Compartilhar no Instagram" class="icone-instagram">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Area Lateral de Pesquisa e Sugestões -->
-        <div class="container-30">
-            <!-- Pesquisa -->
-            <section class="pesquisa">
-                <form action="#" method="get" aria-label="Buscar publicações">
-                    <input type="text" id="pesquisa" name="pesquisa" placeholder="Buscar Publicações...">
-                    <button type="submit">Buscar</button>
-                </form>
-            </section>
-            <!-- Sugestões -->
-            <section class="publicacoes-semelhantes">
-                <h3>Mais Acessadas</h3>
-                <ul>
-                    <li>
-                        <a href="#">Não sei o que Estou Fazendo</a>
-                        <p>Autor: Anderson - Data: 16/11/2024</p>
-                    </li>
-                    <li>
-                        <a href="#">Mas vou Continuar Tentando</a>
-                        <p>Autor: Macharett - Data: 16/11/2024</p>
-                    </li>
-                    <li>
-                        <a href="#">Precisamos incluir o Java</a>
-                        <p>Autor: AMPR - Data: 16/11/2024</p>
-                    </li>
-                </ul>
-            </section>
+            <div class="container-central">
+                <h2 class="titulo-publicacao">A (de)formação científica do médico</h2>
+                <p class="descricao-publicacao">
+                    Este trabalho investiga a (de)formação do médico, explorando a perda do êthos na medicina moderna e
+                    suas implicações éticas. O autor utiliza a filosofia de Heidegger para refletir sobre a crise da
+                    medicina e a formação ética necessária para os profissionais da área.
+                </p>
+                <hr>
+                <h3>SAIBA MAIS +</h3>
+            </div>
+            <div class="container-direita">
+                <div class="container-lateral">
+                    <div class="titulo-lateral">
+                        <h1>Dados</h1>
+                    </div>
+                    <div class="dados">
+                        <div class="linha-dado">
+                            <img src="assets/imagens/icon-escritor.png" alt="Ícone de Autor">
+                            <p>João Cardoso de Castro</p>
+                        </div>
+                        <hr>
+                        <div class="linha-dado">
+                            <img src="assets/imagens/icon-categoria.png" alt="Ícone de Categoria">
+                            <div class="dados-texto">
+                                <p>Filosofia</p>
+                                <p>Bioética</p>
+                                <p>Formação Médica</p>
+                                <p>Crise da Medicina</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="linha-dado">
+                            <img src="assets/imagens/icon-isbn.png" alt="Ícone de ISBN">
+                            <p>978-85-93361-38-8</p>
+                        </div>
+                        <hr>
+                        <div class="linha-dado">
+                            <img src="assets/imagens/icon-data.png" alt="Ícone de Data">
+                            <p>Out. 2022</p>
+                        </div>
+                    </div>
+                    <div class="titulo-lateral">
+                        <h1>Conteúdos Semelhantes</h1>
+                    </div>
+                    <div class="dados">
+                        <ul class="conteudos-semelhantes">
+                            <li><a href="https://example.com/conteudo1" target="_blank">A Filosofia na Medicina Contemporânea</a></li>
+                            <hr>
+                            <li><a href="https://example.com/conteudo2" target="_blank">Bioética e a Crise da Medicina Moderna</a></li>
+                            <hr>
+                            <li><a href="https://example.com/conteudo3" target="_blank">Formação Médica e Ética Profissional</a></li>
+                            <hr>
+                            <li><a href="https://example.com/conteudo4" target="_blank">Filosofia e Medicina: Reflexões para o Século XXI</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- COMENTÁRIOS -->
         <section class="comentarios">
@@ -86,42 +126,61 @@
                 <textarea placeholder="Adicione um comentário..."></textarea>
                 <button type="submit">Enviar</button>
             </form>
-        <!-- Comentário com Avaliação -->
+            <!-- Comentário com Avaliação -->
         </section>
         <section class="comentarios">
-        <h2>Comentários e Avaliações</h2>
-        <div class="comentarios">         
-            <div class="comentario-header">
-                <div class="usuario-info">
-                    <img src="assets/imagens/usuario1.png" alt="Foto do autor" class="foto-autor">
-                    <div>
-                        <p class="nome-autor">João Silva</p>
-                        <p class="data-comentario">15 de Novembro, 2024</p>
+            <h2>Comentários e Reflexões</h2>
+            <div class="comentarios">
+                <div class="comentario-header">
+                    <div class="usuario-info">
+                        <img src="assets/imagens/usuario1.png" alt="Foto do autor" class="foto-autor">
+                        <div>
+                            <p class="nome-autor">Ricardo Almeida</p>
+                            <p class="data-comentario">2 de Novembro de 2023</p>
+                        </div>
+                    </div>
+                    <div class="avaliacao">
+                        <span>★★★★☆</span>
                     </div>
                 </div>
-                <div class="avaliacao">
-                    <span>★★★★☆</span>
-                </div>
+                <p>Uma obra instigante que nos leva a refletir sobre a verdadeira essência da medicina e as mudanças necessárias na formação dos médicos.</p>
             </div>
-            <p>Esse artigo foi muito informativo! Achei a abordagem sobre o tema inovadora, e os exemplos dados são ótimos.</p>
-        </div>        
-        <div class="comentarios">
-            <div class="comentario-header">
-                <div class="usuario-info">
-                    <img src="assets/imagens/usuario2.png" alt="Foto do autor" class="foto-autor">
-                    <div>
-                        <p class="nome-autor">Maria Oliveira</p>
-                        <p class="data-comentario">14 de Novembro, 2024</p>
+    
+            <div class="comentarios">
+                <div class="comentario-header">
+                    <div class="usuario-info">
+                        <img src="assets/imagens/usuario2.png" alt="Foto do autor" class="foto-autor">
+                        <div>
+                            <p class="nome-autor">Tatiane Rocha</p>
+                            <p class="data-comentario">15 de Janeiro de 2024</p>
+                        </div>
+                    </div>
+                    <div class="avaliacao">
+                        <span>★★★☆☆</span>
                     </div>
                 </div>
-                <div class="avaliacao">
-                    <span>★★★☆☆</span>
-                </div>
+                <p>A reflexão sobre a crise da medicina é interessante, mas achei que faltaram mais exemplos práticos de como a ética pode ser aplicada na formação médica cotidiana.</p>
             </div>
-            <p>O artigo foi interessante, mas senti que poderia ser mais profundo em alguns pontos. No geral, gostei.</p>
-        </div>
-        </section>        
+    
+            <div class="comentarios">
+                <div class="comentario-header">
+                    <div class="usuario-info">
+                        <img src="assets/imagens/usuario1.png" alt="Foto do autor" class="foto-autor">
+                        <div>
+                            <p class="nome-autor">André Silva</p>
+                            <p class="data-comentario">30 de Março de 2023</p>
+                        </div>
+                    </div>
+                    <div class="avaliacao">
+                        <span>★★★★★</span>
+                    </div>
+                </div>
+                <p>O livro traz uma análise profunda da filosofia de Heidegger aplicada à medicina, desafiando a forma como os médicos se veem em sua prática profissional.</p>
+            </div>
+    
+        </section>
     </main>
+    
     
     <!-- RODAPÉ -->
     <footer>
