@@ -11,12 +11,10 @@
 </head>
 
 <body>
-
     <header>
         <a href="index.html">
             <img src="assets/imagens/logoEditora.png" alt="Logotipo UNIFESO" class="logo">
         </a>
-        <h1 class="titulo"></h1>
         <nav>
             <!--Menus-->
             <ul>
@@ -26,14 +24,14 @@
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
+        <!-- TÍTULO DA PÁGINA -->
         <h1 class="titulo">E-Books<br>Nossos livros digitais são gratuitos</h1>
     </header>
-
     <main>
 
         <table>
             <marquee class="marquee">
-                <h3 class="marquee"> EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA
+                <h3> EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA
                     UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA
                     UNIFESO EDITORA UNIFESOEDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA
                     UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA UNIFESO EDITORA
@@ -42,137 +40,133 @@
             </marquee>
         </table>
 
-    </main>
+        <section class="search-section">
 
-        <!--Primeira foto " Com letreiro na frente "   div acima    -->
-        <hr>
+            <form class="search-form" action="resultados.html" method="get">
+                <input type="text" name="q" placeholder="Pesquise por título, autor ou categoria..."
+                    class="search-input">
+                <button type="submit" class="search-button">Buscar</button>
+            </form>
+        </section>
+
 
         <div class="container">
 
             <div class="div-titulo">
-
-                <div class="container">
-                    
-                    <div>
-                        <center>
-                            <h1 class="h1"><br>Publicações</h1>
-                        </center>
-                    </div>
-
-                </div>
-
-
-                <br><br><br><br>
-
-
-                <div class="container">
-
-
-                    <div class="livro1">
-
-                        <div>
-                            <center>
-                                <img src="assets/imagens/livro1.jpg" class="imagem-galery">
-                            </center>
-
-                            <p class="p1">O portal busca ampliar o
-                                alcance da
-                                produção do conhecimento científico, tecnológico e de inovação gerada no UNIFESO, além
-                                de
-                                promover o intercâmbio entre instituições parceiras por meio de revistas eletrônicas
-                                publicadas
-                                periodicamente.</p>
-                            <center> <a href="https://www.unifeso.edu.br/editora/conteudo.php?c=periodicos"
-                                    class="botao">SAIBA
-                                    MAIS</a></center>
-
-                        </div>
-
-                    </div>
-
-                    <div class="livro1">
-
-                        <div>
-                          
-                            <center>
-                                <img src="assets/imagens/livro2.jpg" class="imagem-galery">
-                            </center>
-
-                            <p class="p1">Conjunto de publicações que tem
-                                como
-                                objetivo difundir os trabalhos apresentados nos eventos acadêmicos-científicos
-                                realizados no
-                                UNIFESO, tais como congressos, jornadas, semanas acadêmicas etc.</p><br>
-                            <center> <a href="https://www.unifeso.edu.br/editora/conteudo.php?c=anais"
-                                    class="botao">SAIBA
-                                    MAIS</a></center>
-                        </div>
-
-                    </div>
-
-
-
-
-
-                    <div class="livro1">
-
-                        <div>
-                            <!---->
-                            <center>
-                                <img src="assets/imagens/livro3.png" class="imagem-galery">
-                            </center>
-
-                            <p class="p1">As séries buscam garantir a
-                                difusão da
-                                produção acadêmica oriunda dos cursos de graduação e pós-graduação do UNIFESO, assim
-                                como de
-                                instituições parceiras na produção do conhecimento científico, tecnológico, artístico e
-                                cultural.
-                            </p>
-                            <br>
-                            <center>
-                                <a href="https://www.unifeso.edu.br/editora/categorias.php" class="botao">SAIBA MAIS</a>
-                            </center>
-
-
-                        </div>
-
-                    </div>
-
+                <div>
+                    <center>
+                        <h4>Publicações</h4>
+                    </center>
                 </div>
             </div>
+
+            <div class="livro">
+                <a href="publicacoes.html">
+                    <img src="assets/imagens/livro1.png" class="imagem-galery">
+                </a>
+                <p class="p1">O portal busca ampliar o alcance da produção do
+                    conhecimento científico, tecnológico e de inovação gerada
+                    no UNIFESO, além de promover o intercâmbio entre
+                    instituições parceiras por meio de revistas eletrônicas
+                    publicadas periodicamente.
+                </p>
+
+                <a href="publicacoes.html" class="botao">SAIBA MAIS</a>
+
+            </div>
+
+            <div class="livro">
+                <a href="publicacoes.html">
+                    <img src="assets/imagens/livro2.png" class="imagem-galery">
+                </a>
+                <p class="p1">Conjunto de publicações que tem como objetivo
+                    difundir os trabalhos apresentados nos eventos acadêmicos-
+                    científicos realizados no UNIFESO, tais como congressos,
+                    jornadas, semanas acadêmicas etc.
+                </p>
+
+                <a href="publicacoes.html" class="botao">SAIBA MAIS</a>
+
+            </div>
+
+            <div class="livro">
+                <a href="publicacoes.html">
+                    <img src="assets/imagens/livro3.png" class="imagem-galery">
+                </a>
+
+                <p class="p1">As séries buscam garantir a difusão da produção
+                    acadêmica oriunda dos cursos de graduação e pós-graduação
+                    do UNIFESO, assim como de instituições parceiras na produção
+                    do conhecimento científico, tecnológico, artístico e cultural.
+                </p>
+                <a href="publicacoes.html" class="botao">SAIBA MAIS</a>
+
+            </div>
+
 
         </div>
 
         <hr>
-        <!-- CARROSSEL-->>
+
+        <h5>Recentes</h5>
         <div class="carrossel-container">
-            <!-- Botão para mover à esquerda -->
-            <button class="seta esquerda" onclick="moveLeft()">&#8249;</button>
-            
-            <!-- Área do carrossel -->
+            <button class="seta esquerda" onclick="moveLeft(1)">&#8249;</button>
             <div class="carrossel-wrapper">
-                <div class="carrossel">
-                    <!-- Itens do carrossel -->
-                    <div class="carrossel-publicacao"><a href="detalhes1.html"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 1"></a></div>
-                    <div class="carrossel-publicacao"><a href="detalhes2.html"><img src="assets/imagens/publicacao2.jpg" alt="Publicação 2"></a></div>
-                    <div class="carrossel-publicacao"><a href="detalhes3.html"><img src="assets/imagens/publicacao3.jpg" alt="Publicação 3"></a></div>
-                    <div class="carrossel-publicacao"><a href="detalhes4.html"><img src="assets/imagens/publicacao4.jpg" alt="Publicação 4"></a></div>
+                <div class="carrossel" id="carrossel-1">
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes1.html"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 1"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes2.html"><img src="assets/imagens/publicacao2.jpg" alt="Publicação 2"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes3.html"><img src="assets/imagens/publicacao3.jpg" alt="Publicação 3"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes4.html"><img src="assets/imagens/publicacao4.jpg" alt="Publicação 4"></a></div>
                     <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 5"></a></div>
                     <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 6"></a></div>
                     <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 7"></a></div>
                     <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 8"></a></div>
                 </div>
             </div>
-    
-            <!-- Botão para mover à direita -->
-            <button class="seta direita" onclick="moveRight()">&#8250;</button>
+            <button class="seta direita" onclick="moveRight(1)">&#8250;</button>
         </div>
-
         <hr>
 
-    </div>
-   
+        <h5>Dissertações</h5>
+        <div class="carrossel-container">
+            <button class="seta esquerda" onclick="moveLeft(2)">&#8249;</button>
+            <div class="carrossel-wrapper">
+                <div class="carrossel" id="carrossel-2">
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes1.html"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 1"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes2.html"><img src="assets/imagens/publicacao2.jpg" alt="Publicação 2"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes3.html"><img src="assets/imagens/publicacao3.jpg" alt="Publicação 3"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes4.html"><img src="assets/imagens/publicacao4.jpg" alt="Publicação 4"></a></div>
+                    <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 5"></a></div>
+                    <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 6"></a></div>
+                    <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 7"></a></div>
+                    <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 8"></a></div>
+                </div>
+            </div>
+            <button class="seta direita" onclick="moveRight(2)">&#8250;</button>
+        </div>
+        <hr>
+
+        <h5>Teses</h5>
+        <div class="carrossel-container">
+            <button class="seta esquerda" onclick="moveLeft(3)">&#8249;</button>
+            <div class="carrossel-wrapper">
+                <div class="carrossel" id="carrossel-3">
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes1.html"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 1"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes2.html"><img src="assets/imagens/publicacao2.jpg" alt="Publicação 2"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes3.html"><img src="assets/imagens/publicacao3.jpg" alt="Publicação 3"></a></div>
+                    <div class="carrossel-publicacao"><a href="detalhes/detalhes4.html"><img src="assets/imagens/publicacao4.jpg" alt="Publicação 4"></a></div>
+                    <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 5"></a></div>
+                    <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 6"></a></div>
+                    <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 7"></a></div>
+                    <div class="carrossel-publicacao"><a href="#"><img src="assets/imagens/publicacao1.jpg" alt="Publicação 8"></a></div>
+                </div>
+            </div>
+            <button class="seta direita" onclick="moveRight(3)">&#8250;</button>
+        </div>
+        <hr>
+
+    </main>
+
     <footer>
         <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
     </footer>

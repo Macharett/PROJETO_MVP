@@ -5,36 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editora Unifeso - Pesquisa</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style-detalhes.css">
-    <link rel="icon" type="png" href="assets/imagens/icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-detalhes.css">
+    <link rel="icon" type="png" href="/assets/imagens/icon.png">
 </head>
 
 <body>
     <!-- CABEÇALHO -->
     <header>
-        <a href="index.html">
-            <img src="assets/imagens/logoEditora.png" alt="Logotipo UNIFESO" class="logo">
+        <a href="/index.html">
+            <img src="/assets/imagens/logoEditora.png" alt="Logotipo UNIFESO" class="logo">
         </a>
-        <h1 class="titulo"></h1>
         <nav>
             <!--Menus-->
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="publicacoes.html">Publicações</a></li>
-                <li><a href="cadastro.html">Cadastrar Publicação</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/publicacoes.html">Publicações</a></li>
+                <li><a href="/cadastro.html">Cadastrar Publicação</a></li>
+                <li><a href="/login.html">Login</a></li>
             </ul>
         </nav>
         <!-- TÍTULO DA PÁGINA -->
-        <h1 class="titulo">QUEM CUIDA DO CUIDADOR?</h1>
+        <h1 class="titulo">DISCURSOS SOBRE LEITURA ENTRE PROFESSORES</h1>
     </header>
     <!-- CONTEUDO -->
     <main class="content-container">
         <!-- Apresentação da Publicação -->
         <div onlick="history.back()" class="campo-voltar">
             <button onclick="history.back()" class="botao-voltar">
-                <img src="assets/imagens/icon-seta-preta.png" alt="Seta Voltar" class="icon-voltar">
+                <img src="/assets/imagens/icon-seta-preta.png" alt="Seta Voltar" class="icon-voltar">
                 <span class="text-voltar">Voltar</span>
             </button>
         </div>
@@ -42,24 +41,24 @@
         <div class="pagina-publicacao">
             <div class="container-esquerda">
                 <div class="capa-container">
-                    <img src="assets/imagens/publicacao2.jpg" alt="Capa da Publicação" class="capa">
+                    <img src="/assets/imagens/publicacao2.jpg" alt="Capa da Publicação" class="capa">
                 </div>
-                <a href="detalhes2.html">
-                    <button href="detalhes2.html" class="botao-download">DOWNLOAD (9Mb)</button>
+                <a href="/detalhes2.html">
+                    <button href="/detalhes2.html" class="botao-download">DOWNLOAD (9Mb)</button>
                 </a>
                 <div class="compatilhe-container">
                     <div class="botoes-acoes">
                         <h1>Compartilhe</h1>
                         <a href="https://facebook.com" class="botao-compartilhar">
-                            <img src="assets/imagens/iconface1.png" alt="Compartilhar no Facebook"
+                            <img src="/assets/imagens/iconface1.png" alt="Compartilhar no Facebook"
                                 class="icone-facebook">
                         </a>
                         <a href="https://web.whatsapp.com/" class="botao-compartilhar">
-                            <img src="assets/imagens/iconwhats1.png" alt="Compartilhar no WhatsApp"
+                            <img src="/assets/imagens/iconwhats1.png" alt="Compartilhar no WhatsApp"
                                 class="icone-whatsapp">
                         </a>
                         <a href="https://instagram.com" class="botao-compartilhar">
-                            <img src="assets/imagens/iconinsta1.png" alt="Compartilhar no WhatsApp"
+                            <img src="/assets/imagens/iconinsta1.png" alt="Compartilhar no WhatsApp"
                                 class="icone-instagram">
                         </a>
                     </div>
@@ -67,6 +66,7 @@
             </div>
             <div class="container-central">
                 <h2 class="titulo-publicacao">Quem cuida do cuidador?</h2>
+                <hr>
                 <p class="descricao-publicacao">
                     O livro aborda a experiência de uma equipe de saúde analisada à luz dos
                     conceitos de Winnicott. Eugenio contribuiu para obras como Aspectos
@@ -87,12 +87,12 @@
                     </div>
                     <div class="dados">
                         <div class="linha-dado">
-                            <img src="assets/imagens/icon-escritor.png" alt="Ícone de Autor">
+                            <img src="/assets/imagens/icon-escritor.png" alt="Ícone de Autor">
                             <p>Eugenio Paes</p>
                         </div>
                         <hr>
                         <div class="linha-dado">
-                            <img src="assets/imagens/icon-categoria.png" alt="Ícone de Categoria">
+                            <img src="/assets/imagens/icon-categoria.png" alt="Ícone de Categoria">
                             <div class="dados-texto">
                                 <p>Psicologia</p>
                                 <p>Psicossomática</p>
@@ -103,12 +103,12 @@
                         </div>
                         <hr>
                         <div class="linha-dado">
-                            <img src="assets/imagens/icon-isbn.png" alt="Ícone de ISBN">
+                            <img src="/assets/imagens/icon-isbn.png" alt="Ícone de ISBN">
                             <p>978-85-93361-01-2</p>
                         </div>
                         <hr>
                         <div class="linha-dado">
-                            <img src="assets/imagens/icon-data.png" alt="Ícone de Data">
+                            <img src="/assets/imagens/icon-data.png" alt="Ícone de Data">
                             <p>Set.2022</p>
                         </div>
                     </div>
@@ -130,71 +130,7 @@
             </div>
         </div>
         <!-- COMENTÁRIOS -->
-        <section class="comentarios">
-            <!-- Formulário para adicionar comentário -->
-            <h3>Adicionar Comentário</h3>
-            <form>
-                <textarea placeholder="Adicione um comentário..."></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <!-- Comentário com Avaliação -->
-        </section>
-        <section class="comentarios">
-            <h2>Comentários e Avaliações</h2>
-            <div class="comentarios">
-                <div class="comentario-header">
-                    <div class="usuario-info">
-                        <img src="assets/imagens/usuario2.png" alt="Foto do autor" class="foto-autor">
-                        <div>
-                            <p class="nome-autor">Mariana Silva</p>
-                            <p class="data-comentario">12 de Outubro de 2022</p>
-                        </div>
-                    </div>
-                    <div class="avaliacao">
-                        <span>★★★★☆</span>
-                    </div>
-                </div>
-                <p>A obra se destaca pela abordagem teórica sólida, que combina a experiência prática
-                    com a psicanálise de Winnicott, proporcionando uma compreensão profunda da dinâmica
-                    da equipe de saúde.</p>
-            </div>
-            <div class="comentarios">
-                <div class="comentario-header">
-                    <div class="usuario-info">
-                        <img src="assets/imagens/usuario1.png" alt="Foto do autor" class="foto-autor">
-                        <div>
-                            <p class="nome-autor">Lucas Oliveira</p>
-                            <p class="data-comentario">25 de Março de 2023</p>
-                        </div>
-                    </div>
-                    <div class="avaliacao">
-                        <span>★★★☆☆</span>
-                    </div>
-                </div>
-                <p>Embora o trabalho de Eugenio seja relevante, poderia ter mais exemplos práticos para
-                    facilitar a compreensão dos leitores que não estão tão familiarizados com a teoria
-                    psicanalítica.</p>
-            </div>
-            <div class="comentarios">
-                <div class="comentario-header">
-                    <div class="usuario-info">
-                        <img src="assets/imagens/usuario2.png" alt="Foto do autor" class="foto-autor">
-                        <div>
-                            <p class="nome-autor">Fernanda Costa</p>
-                            <p class="data-comentario">7 de Julho de 2023</p>
-                        </div>
-                    </div>
-                    <div class="avaliacao">
-                        <span>★★★★★</span>
-                    </div>
-                </div>
-                <p>A ênfase na psicossomática e no suporte social como fatores importantes para o
-                    tratamento de doenças como a hipertensão é uma contribuição valiosa para a área da
-                    saúde.</p>
-            </div>
-        </section>
     </main>
-
     <!-- RODAPÉ -->
     <footer>
         <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>

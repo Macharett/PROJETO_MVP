@@ -87,7 +87,7 @@ main {
 
 .botao-download {
     display: inline-block; 
-    margin-top: 15px;
+    margin-top: 5px;
     width: 100%;
     background-color: transparent;
     border: 1.2px solid var(--cor-1);
@@ -238,7 +238,7 @@ main {
 
 .dados-texto {
     display: flex;
-    flex-direction: column; /* Empilha os itens verticalmente */
+    flex-direction: column; 
     margin-left: 7px;
 }
 
@@ -257,6 +257,8 @@ main {
 
 .conteudos-semelhantes li {
     margin-bottom: 8px;
+    padding: 0;
+    text-align: left;
 }
 
 .conteudos-semelhantes a {
@@ -264,110 +266,19 @@ main {
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
     font-size: 16px;
-    margin-left: 10px;
+    padding: 6px;
+    line-height: 1.2;
+    display: inline-block;
+    text-indent: 0;    
 }
 
 .conteudos-semelhantes a:hover {
     color: var(--cor-1); 
-    text-decoration: underline;
+    
 }
 
-.dados hr{
+.dados hr {
     margin-bottom: 5px;
-}
-
-/* Estilo para a seção de comentários */
-.comentarios {
-    margin-top: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-.comentarios h2 {
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-.comentarios h3 {
-    font-size: 20px;
-}
-
-.comentario {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-.comentario p {
-    font-size: 16px;
-    color: #333;
-}
-
-.comentario-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.usuario-info {
-    display: flex;
-    gap: 15px;
-}
-
-.foto-autor {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.nome-autor {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.data-comentario {
-    font-size: 14px;
-    color: #888;
-}
-
-.comentarios form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.comentarios textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 15px;
-    resize: vertical;
-    min-height: 100px;
-}
-
-.comentarios button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #006B64;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 160px;
-    height: 40px;
-}
-
-.comentarios button:hover {
-    background-color: #004d4b;
 }
 
 /* Responsividade */

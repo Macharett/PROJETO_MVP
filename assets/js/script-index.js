@@ -1,35 +1,29 @@
-// script.js
+let currentIndex = [0, 0, 0]; // Índices para cada carrossel
 
-let currentIndex = 0;
+function moveLeft(carrosselIndex) {
+    const carrossel = document.querySelector(`#carrossel-${carrosselIndex}`);
+    const totalItems = carrossel.querySelectorAll('.carrossel-publicacao').length;
 
-function moveLeft() {
-    const carrossel = document.querySelector('.carrossel');
-    const totalItems = document.querySelectorAll('.carrossel-publicacao').length;
-
-    // Calcula o próximo índice
-    if (currentIndex > 0) {
-        currentIndex--;
+    if (currentIndex[carrosselIndex] > 0) {
+        currentIndex[carrosselIndex]--;
     } else {
-        currentIndex = totalItems - 5; // Volta ao final se estiver no começo
+        currentIndex[carrosselIndex] = totalItems - 5; // Volta ao final se estiver no começo
     }
 
-    // Move o carrossel
-    const newTransform = `translateX(-${currentIndex * 20}%)`;
+    const newTransform = `translateX(-${currentIndex[carrosselIndex] * 20}%)`;
     carrossel.style.transform = newTransform;
 }
 
-function moveRight() {
-    const carrossel = document.querySelector('.carrossel');
-    const totalItems = document.querySelectorAll('.carrossel-publicacao').length;
+function moveRight(carrosselIndex) {
+    const carrossel = document.querySelector(`#carrossel-${carrosselIndex}`);
+    const totalItems = carrossel.querySelectorAll('.carrossel-publicacao').length;
 
-    // Calcula o próximo índice
-    if (currentIndex < totalItems - 5) {
-        currentIndex++;
+    if (currentIndex[carrosselIndex] < totalItems - 5) {
+        currentIndex[carrosselIndex]++;
     } else {
-        currentIndex = 0; // Volta ao início se estiver no final
+        currentIndex[carrosselIndex] = 0; // Volta ao início se estiver no final
     }
 
-    // Move o carrossel
-    const newTransform = `translateX(-${currentIndex * 20}%)`;
+    const newTransform = `translateX(-${currentIndex[carrosselIndex] * 20}%)`;
     carrossel.style.transform = newTransform;
 }
