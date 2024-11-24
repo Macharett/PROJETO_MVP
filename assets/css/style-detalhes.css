@@ -174,9 +174,14 @@ main {
     margin: 15px 0;
 }
 
-.container-central h3 {
+.saiba-mais:hover a {
+    color: var(--cor-1)
+}
+
+.saiba-mais a {
+    text-decoration: none;
     font-family: Gotham-Book;
-    color: #212529;
+    color: #000000;
 }
 
 .titulo-publicacao {
@@ -347,14 +352,3 @@ main {
 }
 
 
-@font-face {
-    font-family: 'Gotham-Bold';
-    src: url(/assets/fonts/gotham-bold.otf) format('opentype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham-Book';
-    src: url(/assets/fonts/gotham-book.otf) format('opentype');
-    font-size: normal;
-}
