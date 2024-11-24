@@ -38,46 +38,78 @@
         </div>
         <!-- Apresentação da Publicação -->
         <div class="pagina-publicacao">
-            <div class="container-esquerda">
-                <div class="capa-container">
-                    <img src="/assets/imagens/publicacao1.jpg" alt="Capa da Publicação" class="capa">
+            <div class="coluna-esquerda">
+                <!-- Primeira parte: topo, com duas colunas -->
+                <div class="topo">
+                    <div class="container-esquerda">
+                        <div class="capa-container">
+                            <img src="/assets/imagens/publicacao1.jpg" alt="Capa da Publicação" class="capa">
+                        </div>
+                        <a href="/detalhes/detalhes1.html">
+                            <button href="/detalhes/detalhes1.html" class="botao-download">DOWNLOAD (10.2Mb)</button>
+                        </a>
+                        <div class="compatilhe-container">
+                            <div class="botoes-acoes">
+                                <h1>Compartilhe</h1>
+                                <a href="https://facebook.com" class="botao-compartilhar">
+                                    <img src="/assets/imagens/iconface1.png" alt="Compartilhar no Facebook"
+                                        class="icone-facebook">
+                                </a>
+                                <a href="https://web.whatsapp.com/" class="botao-compartilhar">
+                                    <img src="/assets/imagens/iconwhats1.png" alt="Compartilhar no WhatsApp"
+                                        class="icone-whatsapp">
+                                </a>
+                                <a href="https://instagram.com" class="botao-compartilhar">
+                                    <img src="/assets/imagens/iconinsta1.png" alt="Compartilhar no WhatsApp"
+                                        class="icone-instagram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-central">
+                        <h2 class="titulo-publicacao">Discursos sobre leitura entre professores.</h2>
+                        <hr>
+                        <p class="descricao-publicacao">
+                            "Este estudo aborda a importância da leitura na formação docente e o impacto
+                            da prática de leitura nas avaliações de educação básica no Brasil. A pesquisa
+                            destaca a necessidade de repensar a formação dos professores, considerando a
+                            leitura como atividade essencial para o ensino e aprendizagem. Analisa como a
+                            falta de leitura por parte dos educadores afeta o desempenho dos alunos e
+                            propõe soluções para melhorar a qualidade da educação, com foco no
+                            desenvolvimento de metodologias e políticas públicas eficazes."
+                        </p>
+                        <hr>
+                        <h3>SAIBA MAIS +</h3>
+                    </div>
                 </div>
-                <a href="/detalhes/detalhes1.html">
-                    <button href="/detalhes/detalhes1.html" class="botao-download">DOWNLOAD (10.2Mb)</button>
-                </a>
-                <div class="compatilhe-container">
-                    <div class="botoes-acoes">
-                        <h1>Compartilhe</h1>
-                        <a href="https://facebook.com" class="botao-compartilhar">
-                            <img src="/assets/imagens/iconface1.png" alt="Compartilhar no Facebook"
-                                class="icone-facebook">
-                        </a>
-                        <a href="https://web.whatsapp.com/" class="botao-compartilhar">
-                            <img src="/assets/imagens/iconwhats1.png" alt="Compartilhar no WhatsApp"
-                                class="icone-whatsapp">
-                        </a>
-                        <a href="https://instagram.com" class="botao-compartilhar">
-                            <img src="/assets/imagens/iconinsta1.png" alt="Compartilhar no WhatsApp"
-                                class="icone-instagram">
-                        </a>
+
+                <!-- Segunda parte: Meta-dados ocupando a largura total -->
+                <div class="meta-dados">
+                    <div class="dados-central">
+                        <table class="tabela-volumes">
+                            <thead>
+                                <tr>
+                                    <th>Volumes</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Volume 1: Introdução à Psicologia</td>
+                                    <td><a href="/downloads/volume1.pdf" class="botao-download">Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Volume 2: Psicossomática e Saúde</td>
+                                    <td><a href="/downloads/volume2.pdf" class="botao-download">Download</a></td>
+                                </tr>
+                                <!-- Adicione mais linhas conforme necessário -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="container-central">
-                <h2 class="titulo-publicacao">Discursos sobre leitura entre professores.</h2>
-                <hr>
-                <p class="descricao-publicacao">
-                    "Este estudo aborda a importância da leitura na formação docente e o impacto
-                    da prática de leitura nas avaliações de educação básica no Brasil. A pesquisa
-                    destaca a necessidade de repensar a formação dos professores, considerando a
-                    leitura como atividade essencial para o ensino e aprendizagem. Analisa como a
-                    falta de leitura por parte dos educadores afeta o desempenho dos alunos e
-                    propõe soluções para melhorar a qualidade da educação, com foco no
-                    desenvolvimento de metodologias e políticas públicas eficazes."
-                </p>
-                <hr>
-                <h3>SAIBA MAIS +</h3>
-            </div>
+
+            <!-- Coluna Direita com informações adicionais -->
             <div class="container-direita">
                 <div class="container-lateral">
                     <div class="titulo-lateral">
@@ -86,12 +118,16 @@
                     <div class="dados">
                         <div class="linha-dado">
                             <img src="/assets/imagens/icon-escritor.png" alt="Ícone de Autor">
-                            <p>João Silva</p>
+                            <div class="categorias">
+                                <p>João Silva</p>
+                            </div>
                         </div>
                         <hr>
                         <div class="linha-dado">
                             <img src="/assets/imagens/icon-categoria.png" alt="Ícone de Categoria">
-                            <p>Educação</p>
+                            <div class="categorias">
+                                <p>Educação</p>
+                            </div>
                         </div>
                         <hr>
                         <div class="linha-dado">
@@ -118,9 +154,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
-        <!-- COMENTÁRIOS -->       
+
+        <!-- COMENTÁRIOS -->
     </main>
     <!-- RODAPÉ -->
     <footer>

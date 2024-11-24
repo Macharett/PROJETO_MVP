@@ -26,11 +26,10 @@
             </ul>
         </nav>
         <!-- TÍTULO DA PÁGINA -->
-        <h1 class="titulo">DISCURSOS SOBRE LEITURA ENTRE PROFESSORES</h1>
+        <h1 class="titulo">RESÍSUOS ORGÂNICOS</h1>
     </header>
     <!-- CONTEUDO -->
     <main class="content-container">
-        <!-- Apresentação da Publicação -->
         <div onlick="history.back()" class="campo-voltar">
             <button onclick="history.back()" class="botao-voltar">
                 <img src="/assets/imagens/icon-seta-preta.png" alt="Seta Voltar" class="icon-voltar">
@@ -39,45 +38,78 @@
         </div>
         <!-- Apresentação da Publicação -->
         <div class="pagina-publicacao">
-            <div class="container-esquerda">
-                <div class="capa-container">
-                    <img src="/assets/imagens/publicacao3.jpg" alt="Capa da Publicação" class="capa">
+            <div class="coluna-esquerda">
+                <!-- Primeira parte: topo, com duas colunas -->
+                <div class="topo">
+                    <div class="container-esquerda">
+                        <div class="capa-container">
+                            <img src="/assets/imagens/publicacao3.jpg" alt="Capa da Publicação" class="capa">
+                        </div>
+                        <a href="/detalhes/detalhes3.html">
+                            <button href="/detalhes/detalhes3.html" class="botao-download">DOWNLOAD (10.2Mb)</button>
+                        </a>
+                        <div class="compatilhe-container">
+                            <div class="botoes-acoes">
+                                <h1>Compartilhe</h1>
+                                <a href="https://facebook.com" class="botao-compartilhar">
+                                    <img src="/assets/imagens/iconface1.png" alt="Compartilhar no Facebook"
+                                        class="icone-facebook">
+                                </a>
+                                <a href="https://web.whatsapp.com/" class="botao-compartilhar">
+                                    <img src="/assets/imagens/iconwhats1.png" alt="Compartilhar no WhatsApp"
+                                        class="icone-whatsapp">
+                                </a>
+                                <a href="https://instagram.com" class="botao-compartilhar">
+                                    <img src="/assets/imagens/iconinsta1.png" alt="Compartilhar no WhatsApp"
+                                        class="icone-instagram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-central">
+                        <h2 class="titulo-publicacao">Resíduos Orgânicos Alternativos nos processos de
+                            Compostagem e Vermicompostagem</h2>
+                        <hr>
+                        <p class="descricao-publicacao">
+                            Apresentamos com satisfação este trabalho, que contribui com dados de pesquisa
+                            para a Política Nacional de Resíduos Sólidos (Lei 12.305/2010). O estudo busca
+                            oferecer soluções sustentáveis para a gestão de resíduos sólidos urbanos, com
+                            foco em compostagem, vermicompostagem e educação ambiental. Esperamos que os
+                            leitores se inspirem a adotar essas práticas em seus lares, promovendo mudanças
+                            no gerenciamento de resíduos..
+                        </p>
+                        <hr>
+                        <h3>SAIBA MAIS +</h3>
+                    </div>
                 </div>
-                <a href="/detalhes3.html">
-                    <button href="/detalhes3.html" class="botao-download">DOWNLOAD (21Mb)</button>
-                </a>
-                <div class="compatilhe-container">
-                    <div class="botoes-acoes">
-                        <h1>Compartilhe</h1>
-                        <a href="https://facebook.com" class="botao-compartilhar">
-                            <img src="/assets/imagens/iconface1.png" alt="Compartilhar no Facebook"
-                                class="icone-facebook">
-                        </a>
-                        <a href="https://web.whatsapp.com/" class="botao-compartilhar">
-                            <img src="/assets/imagens/iconwhats1.png" alt="Compartilhar no WhatsApp"
-                                class="icone-whatsapp">
-                        </a>
-                        <a href="https://instagram.com" class="botao-compartilhar">
-                            <img src="/assets/imagens/iconinsta1.png" alt="Compartilhar no WhatsApp"
-                                class="icone-instagram">
-                        </a>
+
+                <!-- Segunda parte: Meta-dados ocupando a largura total -->
+                <div class="meta-dados">
+                    <div class="dados-central">
+                        <table class="tabela-volumes">
+                            <thead>
+                                <tr>
+                                    <th>Volumes</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Volume 1: Introdução à Psicologia</td>
+                                    <td><a href="/downloads/volume1.pdf" class="botao-download">Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Volume 2: Psicossomática e Saúde</td>
+                                    <td><a href="/downloads/volume2.pdf" class="botao-download">Download</a></td>
+                                </tr>
+                                <!-- Adicione mais linhas conforme necessário -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="container-central">
-                <h2 class="titulo-publicacao">Resíduos Orgânicos Alternativos nos processos de
-                    Compostagem e Vermicompostagem</h2>
-                <p class="descricao-publicacao">
-                    Apresentamos com satisfação este trabalho, que contribui com dados de pesquisa
-                    para a Política Nacional de Resíduos Sólidos (Lei 12.305/2010). O estudo busca
-                    oferecer soluções sustentáveis para a gestão de resíduos sólidos urbanos, com
-                    foco em compostagem, vermicompostagem e educação ambiental. Esperamos que os
-                    leitores se inspirem a adotar essas práticas em seus lares, promovendo mudanças
-                    no gerenciamento de resíduos..
-                </p>
-                <hr>
-                <h3>SAIBA MAIS +</h3>
-            </div>
+
+            <!-- Coluna Direita com informações adicionais -->
             <div class="container-direita">
                 <div class="container-lateral">
                     <div class="titulo-lateral">
@@ -86,12 +118,14 @@
                     <div class="dados">
                         <div class="linha-dado">
                             <img src="/assets/imagens/icon-escritor.png" alt="Ícone de Autor">
-                            <p>Cátia Araújo</p>
+                            <div class="categorias">
+                                <p>Cátia Araújo</p>
+                            </div>
                         </div>
                         <hr>
                         <div class="linha-dado">
                             <img src="/assets/imagens/icon-categoria.png" alt="Ícone de Categoria">
-                            <div class="dados-texto">
+                            <div class="categorias">
                                 <p>Gestão de Resíduos</p>
                                 <p>Práticas Sustentáveis</p>
                                 <p>Educação Ambiental</p>
@@ -131,9 +165,9 @@
                 </div>
             </div>
         </div>
+
         <!-- COMENTÁRIOS -->
     </main>
-
     <!-- RODAPÉ -->
     <footer>
         <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
