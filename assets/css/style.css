@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: #F3F3F3;
+    background-color: #ffffff;
     height: 100%;
 }
 
@@ -33,7 +33,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 250px;
+    height: 180px;
 }
 
 /* LOGOTIPO -Canto superior esquerdo- */
@@ -136,5 +136,17 @@ footer {
         font-size: 28px;
         margin-top: 20px;
     }
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url(/assets/fonts/gotham-bold.otf) format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url(/assets/fonts/gotham-book.otf) format('opentype');
+    font-size: normal;
 }
 

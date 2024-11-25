@@ -1,0 +1,87 @@
+<div class="container2">
+
+            <div>
+                <div class="container">
+
+                    <div class="div-titulo">
+                        <center>
+                            <h1 class="h1"><br>Lançamentos</h1>
+                        </center>
+                    </div>
+
+                </div>
+
+                <br><br><br><br>
+
+                <div class="container2">
+
+                    <div class="livro2">
+
+                        <div>
+                            
+                            <center>
+                                <img src="assets/imagens/img1.png" class="imagem-galery">
+                            </center>
+
+                            <p class="p1" style="text-align: center"><br>Análise da formação em
+                                saúde:Uma cartografia<br> das mudanças curriculares<br> no Ensino.
+                            </p>
+                            <center> 
+                                <a href="https://www.unifeso.edu.br/editora/pdf/eb8ab072b519b1c4a6088c2c9ce35ac4.pdf"
+                                    class="botao">SAIBA
+                                    MAIS</a>
+                            </center>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="livro2">
+
+                        <div>
+                            <!---->
+                            <center>
+                                <img src="assets/imagens/img2.png" class="imagem-galery">
+                            </center>
+
+                            <p class="p1"><br>Aulas Inovadoras de Professores Incríveis
+                                Experiências docentes exitosas nos Cursos de
+                                Graduação Unifeso em 2022.
+                            </p><br>
+                            <center> 
+                                <a href="https://www.unifeso.edu.br/uploads/7a26219b0f41bf3c83641d4f5dfa7168.pdf"
+                                    class="botao">SAIBA
+                                    MAIS</a>
+                            </center>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="livro2">
+
+                        <div>
+                            <center>
+                                <img src="assets/imagens/img3.png" class="imagem-galery">
+                            </center>
+
+                            <p class="p1" style="text-align: center;"><br>Cardenos de Odontologia<br> do UNIFESO.
+                            </p>
+                            <br>
+                            <center> 
+                                <a href="https://revista.unifeso.edu.br/index.php/cadernosodontologiaunifeso/issue/view/104" class="botao">SAIBA MAIS</a>
+                            </center>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
