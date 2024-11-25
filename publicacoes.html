@@ -28,17 +28,54 @@
     </header>
     <main class="content-container">
         <div class="container-30">
-            <div class="filtragem">
-                <span class="filtrepor">Filtre por</span>
-                <fieldset>
-                    <label>Palavra-chave</label>
-                    <input type="text" placeholder="Digite a palavra-chave" />
-                </fieldset>
+            <div class="pesquisa">
+                <div class="filtrepor">
+                    <h1>Filtre por</h1>
+                </div>
+                <div class="dados">
+                    <fieldset>
+                        <label for="q">Palavra-chave</label>
+                        <input type="text" name="q" id="q" maxlength="150" placeholder="Digite a palavra-chave"
+                            class="search-input" />
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="filter_date1">Data:</label>
+                        <input type="date" id="filter_date1" name="d1" placeholder="" />
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="tax-category">Categoria:</label>
+                        <select id="tax-category" name="t[]" multiple>
+                            <option value="2971">Cartilhas e Manuais</option>
+                            <option value="2973">Catálogos</option>
+                            <option value="2945">Publicações</option>
+                            <option value="2753">Regimento Interno</option>
+                            <option value="2974">Revistas</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="tags">Assunto:</label>
+                        <select name="tags[]" id="tags" multiple>
+                            <option value="336">Ab-rogação</option>
+                            <option value="337">Abuso</option>
+                            <option value="338">Abuso de autoridade</option>
+                            <option value="339">Abuso de poder</option>
+                            <option value="340">Abuso do poder econômico</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div class="botoes">
+                    <button type="submit" class="bt-filtrar">Filtrar</button>
+                    <button type="reset" class="bt-limpar">Limpar</button>
+                </div>
             </div>
         </div>
         <div class="container-60">
             <section class="catalogo">
-                <a href="detalhes/detalhes1.html" class="card link">
+                <a href="detalhes/detalhes1.html" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao1.jpg">
                         <div class="detalhes">
@@ -46,7 +83,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="detalhes/detalhes2.html" class="card link">
+                <a href="detalhes/detalhes2.html" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao2.jpg">
                         <div class="detalhes">
@@ -54,7 +91,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="detalhes/detalhes3.html" class="card link">
+                <a href="detalhes/detalhes3.html" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao3.jpg">
                         <div class="detalhes">
@@ -63,7 +100,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="detalhes/detalhes4.html" class="card link">
+                <a href="detalhes/detalhes4.html" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao4.jpg">
                         <div class="detalhes">
@@ -71,7 +108,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao5.jpg">
                         <div class="detalhes">
@@ -79,7 +116,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao6.jpg">
                         <div class="detalhes">
@@ -87,7 +124,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao7.jpg">
                         <div class="detalhes">
@@ -95,7 +132,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao8.jpg">
                         <div class="detalhes">
@@ -103,7 +140,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao9.jpg">
                         <div class="detalhes">
@@ -111,7 +148,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao10.jpg">
                         <div class="detalhes">
@@ -119,7 +156,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao11.jpg">
                         <div class="detalhes">
@@ -127,7 +164,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao12.jpg">
                         <div class="detalhes">
@@ -135,7 +172,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao13.jpg">
                         <div class="detalhes">
@@ -143,7 +180,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao14.jpg">
                         <div class="detalhes">
@@ -151,7 +188,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao15.jpg">
                         <div class="detalhes">
@@ -159,7 +196,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao16.jpg">
                         <div class="detalhes">
@@ -167,7 +204,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao17.jpg">
                         <div class="detalhes">
@@ -175,7 +212,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao18.jpg">
                         <div class="detalhes">
@@ -183,7 +220,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao19.jpg">
                         <div class="detalhes">
@@ -191,7 +228,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao20.jpg">
                         <div class="detalhes">
@@ -199,7 +236,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao21.jpg">
                         <div class="detalhes">
@@ -207,7 +244,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao22.jpg">
                         <div class="detalhes">
@@ -215,7 +252,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao23.jpg">
                         <div class="detalhes">
@@ -223,7 +260,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card link">
+                <a href="#" class="link">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao24.jpg">
                         <div class="detalhes">

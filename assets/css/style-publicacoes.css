@@ -4,45 +4,70 @@
     justify-content: space-between;
     gap: 20px; 
     padding: 20px;
-    flex-wrap: wrap;
 }
 
-/*  LADO ESQUERDO DA PAGINA - APRESENTAÇÃO EM SI  */
 .container-60 {
-    flex: 3;
-    min-width: 60%;
-    background-color: #fff;
-    padding: 15px; 
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container-60 > * {
+    flex: 1 1 calc(25% - 15px);
+    min-width: 200px; 
+    box-sizing: border-box;
 }
 
 .container-30 {
-    flex: 1;
-    min-width: 25%;
-    background-color: #fff;
-    padding: 15px; 
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px; /* Mesma distância do padding do .content-container */
+    width: 300px; /* Largura fixa */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 300px;
 }
 
-.filtragem label {
+.filtrepor {
+    background-color: #EBECF3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+
+.filtrepor h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #006b64;
+    font-family: "Quicksand", sans-serif;
+}
+
+.dados {
+    border: 2px solid #ebecf3;
+    padding: 10px; 
+    margin-bottom: 20px;  
+}
+
+fieldset {
+    border: none;
+}
+
+.pesquisa {
+    margin-bottom: 20px;
+}
+
+.pesquisa label {
     font-size: 14px;
-    color: black;
+    color: #525253;
+    line-height: 24px;
     width: 100%;
     float: left;
     margin: auto;
     text-align: left;
 }
 
-.filtrepor {
-    font-size: 1.2em;
-    color: black;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.filtragem input {
+.pesquisa input,
+.pesquisa select {
     width: 100%;
     padding: 10px;
     font-size: 0.9em;
@@ -51,8 +76,38 @@
     margin-bottom: 15px;
 }
 
-fieldset {
+.pesquisa input1 {
+    width: 45%;
+    padding: 10px;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+.pesquisa botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pesquisa bt-filtrar,
+.pesquisa bt-limpar {
+    background: linear-gradient(to right, #aaaaaa 50%, #006B64 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    color: white;
+    padding: 10px 15px;
     border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-position 0.4s ease;
+}
+
+.pesquisa bt-filtrar:hover,
+.pesquisa bt-limpar:hover {
+    background-position: right bottom;
 }
 
 .catalogo {
@@ -73,8 +128,6 @@ fieldset {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-    text-decoration: none;
-    color: inherit;
     max-width: 300px;
 }
 
@@ -90,14 +143,21 @@ fieldset {
 }
 
 .publicacao-card h1 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px;
     padding: 0 10px;
     font-family: Gotham-Book;
-    text-decoration: none;
+    color: black;
 }
 
 .titulo {
     font-size: 24px;
     margin-bottom: 15px;
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
