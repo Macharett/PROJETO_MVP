@@ -12,7 +12,7 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background: url('/assets/imagens/fundocadastro.jpg') no-repeat center center fixed;
+    background: url("../imagens/fundocadastro.jpg") no-repeat center center fixed;
 
     background-size: cover;
 
