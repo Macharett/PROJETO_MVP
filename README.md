@@ -25,12 +25,13 @@ Optamos por um MVP de protótipo funcional para validar rapidamente as principai
 ## Dores do público-alvo
 - Necessidade de acesso rápido e fácil às publicações acadêmicas.
 - Dificuldade na descoberta e acesso aos trabalhos publicados.
+- Dificuldade no processo de cadastro de novas publicações
 - Falta de interatividade para comentários e avaliações nas publicações.
 - Necessidade de um sistema de busca avançada para facilitar a filtragem das publicações.
 - Exigência de diferentes níveis de acesso para gerenciar e editar conteúdo.
 - Necessidade de um design que reflita a identidade visual da Editora Unifeso.
 - Preocupações com a segurança e privacidade dos dados dos usuários.
-- Importância de um desempenho rápido para acomodar um grande número de usuários..
+- Importância de um desempenho rápido para acomodar um grande número de usuários.
  
  ## Objetivo e Benefícios do Produto
 - Feedback e Interatividade: Estaremos futuramente inserindo um campo para avaliação e comentários nas postagens. Gera engajamento e feed para autores e também leitores.
