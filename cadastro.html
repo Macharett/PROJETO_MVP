@@ -3,67 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Publicações</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro de Publicação</title>
     <link rel="stylesheet" href="assets/css/style-cadastro.css">
-    <link rel="icon" type="png" href="assets/imagens/icon.png">
+    <script>
+        function validateForm() {
+            const fileInput = document.getElementById("arquivo").value;
+            const confirmCheckbox = document.getElementById("confirmar").checked;
+
+            // Verifica se o campo de arquivo foi preenchido
+            if (!fileInput) {
+                alert("Por favor, faça o upload de um arquivo.");
+                return false;
+            }
+
+            // Verifica se o checkbox de confirmação foi marcado
+            if (!confirmCheckbox) {
+                alert("Por favor, confirme que as informações estão corretas.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </head>
-<body class="cadastro-page">
-    <!-- CABEÇALHO -->
-    <header>
-        <a href="index.html">
-            <img src="assets/imagens/logoEditora.png" alt="Logotipo UNIFESO" class="logo">
-        </a>
-        <nav>
-            <!--Menus-->
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="publicacoes.html">Publicações</a></li>
-                <li><a href="cadastro.html">Cadastrar Publicação</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Formulário de Cadastro de Publicações -->
-        <div id="Cadastro-Conteiner" class="conteiner-formulario">
-            <div class="formulario">
-                <form action="processa_publicacao.php" method="post">
-                    <!-- Campo Título -->
-                    <label for="titulo">Título:</label>
-                    <input type="text" id="titulo" name="titulo" placeholder="Digite o título da obra" required>
+<body>
 
-                    <!-- Campo Autor -->
-                    <label for="titulo">Autor:</label>
-                    <input type="text" id="autor" name="autor" placeholder="Digite o autor da obra" required>
+    <div class="form-container">
+        <!-- Logo da Instituição -->
+        <img src="assets/imagens/logounifeso.png" alt="Logo da Instituição" class="logo">
 
-                    <!-- Campo Resumo -->
-                    <label for="resumo">Resumo:</label>
-                    <textarea id="resumo" name="resumo" rows="4" placeholder="Escreva um breve resumo da obra" required></textarea>
+        <h1>Cadastro de Publicação</h1>
+        <form action="#" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <!-- Campo Autor -->
+            <input type="text" name="autor" placeholder="Nome do Autor" required>
 
-                    <!-- Campo Gênero (Texto Livre) -->
-                    <label for="genero">Gênero:</label>
-                    <input type="text" id="genero" name="genero" placeholder="Digite o gênero da obra" required>
+            <!-- Campo Título -->
+            <input type="text" name="titulo" placeholder="Título da Publicação" required>
 
-                    <!-- Campo Autoria Exclusiva -->
-                    <label>Autoria exclusiva?</label>
-                    <label><input type="radio" name="autoria_exclusiva" value="sim" required> Sim</label>
-                    <label><input type="radio" name="autoria_exclusiva" value="nao"> Não</label>
+            <!-- Campo Breve Descrição -->
+            <textarea name="descricao" placeholder="Breve Descrição" rows="4" required></textarea>
 
-                    <!-- Botão de Envio -->
-                    <button type="submit">Cadastrar Publicação</button>
-                    <br>
-                    <br>
-                    <div class="upload-container">
-                        <input type="file">
-                        
-                        
-                    
-                    </div>
-    </main>
+            <!-- Campo Categoria -->
+            <label for="categoria">Categoria:</label>
+            <select name="categoria" id="categoria" required>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Educação">Educação</option>
+                <option value="Ciência">Ciência</option>
+            </select>
 
-    <footer>
-        <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
-    </footer>
+            <!-- Campo Autoria -->
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="autoria" value="própria" required> Autoria Própria
+                </label>
+                <label>
+                    <input type="radio" name="autoria" value="não-própria" required> Não Autoria Própria
+                </label>
+            </div>
+
+            <!-- Campo de Upload de Arquivo -->
+            <label for="arquivo">Enviar Arquivo (PDF):</label>
+            <input type="file" id="arquivo" name="arquivo" accept=".pdf" required>
+
+            <!-- Checkbox de Confirmação -->
+            <label>
+                <input type="checkbox" id="confirmar" name="confirmar" required> Confirmo que as informações estão corretas.
+            </label>
+
+            <!-- Botão de Finalizar Cadastro -->
+            <button type="submit">Finalizar Cadastro</button>
+        </form>
+
+        <!-- Botão de Voltar -->
+        <a href="javascript:history.back()" class="back-button">Voltar</a>
+    </div>
+
 </body>
 </html>
