@@ -17,6 +17,9 @@ Plataforma WEB para publicações UNIFESO
  ## Tipo de MVP
 Optamos por um MVP de protótipo funcional para validar rapidamente as principais funcionalidades e o design do site. Esse modelo permite coletar feedback direto dos usuários e priorizar melhorias antes do desenvolvimento completo, garantindo que a plataforma final atenda às necessidades da comunidade Unifeso.
 
+ ## Requisitos de sistema
+ - Serão atendidos neste MVP os requisitos classificados como Prioridade Alta.
+
  ## Público-alvo
 - **Estudantes da Unifeso:** Buscam acesso fácil e rápido às publicações acadêmicas para apoiar seus estudos e pesquisas.
 - **Funcionários e Acadêmicos:** Necessitam de uma plataforma eficiente para consultar, divulgar e acompanhar a produção acadêmica da instituição.
@@ -38,9 +41,9 @@ Optamos por um MVP de protótipo funcional para validar rapidamente as principai
 - Agilidade na Publicação de Artigos: Agora, os acadêmicos podem enviar seus trabalhos diretamente pelo site, sem precisar usar e-mail. Com isso, o processo de aprovação e publicação fica mais rápido e fácil, dando mais transparência e menos complicação para quem quer publicar.
 
  ## Intruções de acesso ao MVP
- - Acesse o repositório https://github.com/Macharett/PROJETO_MVP
- - Clique em Releases 
- - Selecione a versão "MPV - Editora Feso v1.0.0"
- - Baixe o Asset "Source code (zip)"
- - Extraia a pasta PROJETO_MVP-mvp
- - Abra o arquivo index.html no navegador de sua preferência
+ - Acesse o repositório https://github.com/Macharett/PROJETO_MVP.
+ - Clique em Releases.
+ - Selecione a versão "MPV - Editora Feso v1.0.0".
+ - Baixe o Asset "Source code (zip)".
+ - Extraia a pasta PROJETO_MVP-mvp.
+ - Abra o arquivo index.html no navegador de sua preferência.
