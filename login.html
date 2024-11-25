@@ -1,49 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="png" href="assets/imagens/icon.png">
+    <title>Login - UNIFESO</title>
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
-<body class="login-page">
-    <header>
-        <a href="index.html">
-            <img src="assets/imagens/logoEditora.png" alt="Logotipo UNIFESO" class="logo">
-        </a>
-        <nav>
-            <!--Menus-->
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="publicacoes.html">Publicações</a></li>
-                <li><a href="cadastro.html">Cadastrar Publicação</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
 
-    <div id="Login-conteiner" class="conteiner-formulario">
-        <h2>Login</h2>
-        <form id="formLogin">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-
-            <button type="submit">Entrar</button>
-        </form>
-
-        <div class="register-link">
-            <p>Não tem uma conta? <a href="novo.user.html">Cadastre-se</a></p>
+<body>
+    <div class="login-container">
+        <div class="form-container">
+            <img src="assets/imagens/logounifeso.png" alt="Logotipo UNIFESO" class="logo">
+            <h1>Seja bem-vindo ao portal UNIFESO</h1>
+            <h2>Faça seu login</h2>
+            <form action="#">
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+                <button type="submit">Acessar</button>
+            </form>
+            <div class="register-link-container">
+                <p>Ainda não possui cadastro? <a href="novo.user.html" class="register-link">Quero me cadastrar</a></p>
+            </div>
         </div>
     </div>
-</main>
-<footer>
-    <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
-</footer>
 </body>
+
 </html>

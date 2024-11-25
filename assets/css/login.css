@@ -1,0 +1,220 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos no tamanho total */
+
+}
+ 
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: url('/assets/imagens/fundocadastro.jpg') no-repeat center center fixed;
+
+    background-size: cover;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    overflow: hidden; /* Evita barras de rolagem desnecessárias */
+
+}
+ 
+.login-container {
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    padding: 20px;
+
+    flex-wrap: wrap; /* Adiciona flexibilidade caso o conteúdo seja maior que a tela */
+
+}
+ 
+.form-container {
+
+    background: white;
+
+    padding: 20px;
+
+    margin-left: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    width: 90%; /* Ajusta para telas menores */
+
+    max-width: 350px; /* Limita a largura máxima */
+
+    text-align: center;
+
+}
+ 
+.logo {
+
+    display: block;
+
+    margin: 0 auto 10px;
+
+    width: 140px;
+
+    height: auto;
+
+}
+ 
+h1 {
+
+    font-size: 18px;
+
+    margin: 10px 0;
+
+    color: #333;
+
+}
+ 
+h2 {
+
+    font-size: 16px;
+
+    margin: 10px 0;
+
+    color: #555;
+
+}
+ 
+form {
+
+    margin-top: 20px;
+
+}
+ 
+input[type="email"],
+
+input[type="password"] {
+
+    width: 100%; /* Garante que os inputs respeitem os limites do contêiner */
+
+    padding: 10px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+
+}
+ 
+button {
+
+    background: linear-gradient(to right, #aaaaaa 50%, hsl(176, 100%, 21%) 50%);
+
+    background-size: 200% 100%;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    width: 100%;
+
+    transition: background-position 0.4s ease;
+
+}
+ 
+button:hover {
+
+    background-position: right bottom;
+
+}
+ 
+.forgot-password {
+
+    display: inline-block;
+
+    margin: 5px 0 10px;
+
+    text-align: left; 
+
+    color: #007BFF;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+ 
+.forgot-password:hover {
+
+    text-decoration: underline;
+
+}
+ 
+.register-link-container {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+}
+ 
+.register-link {
+
+    color: #007BFF;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+ 
+.register-link:hover {
+
+    text-decoration: underline;
+
+}
+ 
+/* Garantia de Responsividade */
+
+@media (max-width: 768px) {
+
+    .login-container {
+
+        justify-content: center; /* Centraliza o formulário em telas menores */
+
+    }
+ 
+    .form-container {
+
+        margin: 0;
+
+    }
+
+}
+ 
