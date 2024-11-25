@@ -47,13 +47,30 @@
             </form>
 
             <div class="register-link-container">
-                <p>Já tem uma conta? <a href="/login" class="register-link">Entrar</a></p>
+                <p>Já tem uma conta? <a href="login.html" class="register-link">Entrar</a></p>
             </div>
 
             <!-- Botão de voltar -->
             <button class="back-button" onclick="window.history.back();">Voltar</button>
         </div>
     </div>
+    <script>
+        document.getElementById('formCadastro').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            
+            const senha = document.getElementById('senha').value;
+            const confirmarSenha = document.getElementById('confirmarSenha').value;
+            const errorMessage = document.getElementById('errorMessage');
 
+            // Validação da senha
+            if (senha !== confirmarSenha) {
+                errorMessage.textContent = "As senhas não coincidem!";
+            } else {
+                errorMessage.textContent = "";
+                alert("Usuário cadastrado com sucesso!");
+                document.getElementById('formCadastro').reset(); // Limpa o formulário
+            }
+        });
+    </script>
 </body>
 </html>
