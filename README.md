@@ -35,3 +35,11 @@ Optamos por um MVP de protótipo funcional para validar rapidamente as principai
  ## Objetivo e Benefícios do Produto
 - Feedback e Interatividade: Estaremos futuramente inserindo um campo para avaliação e comentários nas postagens. Gera engajamento e feed para autores e também leitores.
 - Agilidade na Publicação de Artigos: Agora, os acadêmicos podem enviar seus trabalhos diretamente pelo site, sem precisar usar e-mail. Com isso, o processo de aprovação e publicação fica mais rápido e fácil, dando mais transparência e menos complicação para quem quer publicar.
+
+ ## Intruções de acesso ao MVP
+ - Acesse o repositório https://github.com/Macharett/PROJETO_MVP
+ - Clique em Releases 
+ - Selecione a versão "MPV - Editora Feso v1.0.0"
+ - Baixe o Asset "Source code (zip)"
+ - Extraia a pasta PROJETO_MVP-mvp
+ - Abra o arquivo index.html no navegador de sua preferência
