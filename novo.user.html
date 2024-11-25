@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validatePasswords() {
+            const password = document.getElementById("senha").value;
+            const confirmPassword = document.getElementById("confirm-senha").value;
+
+            if (password !== confirmPassword) {
+                alert("As senhas não coincidem. Tente novamente.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
 
     <div class="login-container">
         <div class="form-container">
             <!-- Logo -->
-            <img src="assets/imagens/logounifeso.png" alt="Logo" class="logo">
+            <img src="/assets/imagens/logo.png" alt="Logo" class="logo">
 
             <h1>Cadastro de Conta</h1>
-            <form action="#" method="POST">
+            <form action="#" method="POST" onsubmit="return validatePasswords()">
                 <!-- Campos de Entrada -->
                 <input type="text" name="nome" placeholder="Nome Completo" required>
                 <input type="email" name="email" placeholder="E-mail" required>
-                <input type="password" name="senha" placeholder="Senha" required>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                <input type="password" id="confirm-senha" name="confirm-senha" placeholder="Confirmar Senha" required>
 
                 <!-- Botão de Cadastro -->
                 <button type="submit">Cadastrar</button>
