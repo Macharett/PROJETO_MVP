@@ -26,6 +26,7 @@
             </ul>
         </nav>
     </header>
+
     <main class="content-container">
         <div class="container-30">
             <div class="pesquisa">
@@ -35,8 +36,7 @@
                 <div class="dados">
                     <fieldset>
                         <label for="q">Palavra-chave</label>
-                        <input type="text" name="q" id="q" maxlength="150" placeholder="Digite a palavra-chave"
-                            class="search-input" />
+                        <input type="text" name="q" id="q" maxlength="150" placeholder="Digite a palavra-chave" class="search-input" />
                     </fieldset>
 
                     <fieldset>
@@ -46,36 +46,38 @@
 
                     <fieldset>
                         <label for="tax-category">Categoria:</label>
-                        <select id="tax-category" name="t[]" multiple>
-                            <option value="2971">Cartilhas e Manuais</option>
-                            <option value="2973">Catálogos</option>
-                            <option value="2945">Publicações</option>
-                            <option value="2753">Regimento Interno</option>
-                            <option value="2974">Revistas</option>
+                        <select id="tax-category" name="t" multiple>
+                            <option value="Cartilhas e Manuais">Cartilhas e Manuais</option>
+                            <option value="Catálogos">Catálogos</option>
+                            <option value="Publicações">Publicações</option>
+                            <option value="Regimento Interno">Regimento Interno</option>
+                            <option value="Revistas">Revistas</option>
                         </select>
                     </fieldset>
 
                     <fieldset>
                         <label for="tags">Assunto:</label>
                         <select name="tags[]" id="tags" multiple>
-                            <option value="336">Ab-rogação</option>
-                            <option value="337">Abuso</option>
-                            <option value="338">Abuso de autoridade</option>
-                            <option value="339">Abuso de poder</option>
-                            <option value="340">Abuso do poder econômico</option>
+                            <option value="Ab-rogação">Ab-rogação</option>
+                            <option value="Abuso">Abuso</option>
+                            <option value="Abuso de autoridade">Abuso de autoridade</option>
+                            <option value="Abuso de poder">Abuso de poder</option>
+                            <option value="Abuso do poder econômico">Abuso do poder econômico</option>
                         </select>
                     </fieldset>
                 </div>
 
                 <div class="botoes">
-                    <button type="submit" class="bt-filtrar">Filtrar</button>
-                    <button type="reset" class="bt-limpar">Limpar</button>
+                    <button type="button" class="bt-filtrar" onclick="filtrarPublicacoes()">Filtrar</button>
+                    <button type="reset" class="bt-limpar" onclick="limparFiltros()">Limpar</button>
                 </div>
             </div>
         </div>
+
         <div class="container-60">
             <section class="catalogo">
-                <a href="detalhes1.html" class="link">
+                <!-- Exemplo de publicações -->
+                <a href="detalhes1.html" class="link" data-categoria="Cartilhas e Manuais" data-tags="Ab-rogação, Abuso de autoridade">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao1.jpg">
                         <div class="detalhes">
@@ -83,7 +85,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="detalhes2.html" class="link">
+                
+                <a href="detalhes2.html" class="link" data-categoria="Revistas" data-tags="Abuso, Abuso de poder">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao2.jpg">
                         <div class="detalhes">
@@ -91,16 +94,17 @@
                         </div>
                     </div>
                 </a>
-                <a href="detalhes3.html" class="link">
+                
+                <a href="detalhes3.html" class="link" data-categoria="Publicações" data-tags="Abuso do poder econômico">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao3.jpg">
                         <div class="detalhes">
-                            <h1 class="titulo">Resíduos orgânicos alternativos nos processos de compostagem e
-                                vermicompostagem</h1>
+                            <h1 class="titulo">Resíduos orgânicos alternativos nos processos de compostagem e vermicompostagem</h1>
                         </div>
                     </div>
                 </a>
-                <a href="detalhes4.html" class="link">
+                
+                <a href="detalhes4.html" class="link" data-categoria="Cartilhas e Manuais" data-tags="Ab-rogação, Abuso">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao4.jpg">
                         <div class="detalhes">
@@ -108,7 +112,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="link">
+                
+                <a href="detalhes5.html" class="link" data-categoria="Revistas" data-tags="Abuso, Abuso do poder econômico">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao5.jpg">
                         <div class="detalhes">
@@ -116,7 +121,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="link">
+                
+                <a href="detalhes6.html" class="link" data-categoria="Catálogos" data-tags="Abuso de autoridade">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao6.jpg">
                         <div class="detalhes">
@@ -124,7 +130,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="link">
+                
+                <a href="detalhes7.html" class="link" data-categoria="Publicações" data-tags="Abuso do poder econômico">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao7.jpg">
                         <div class="detalhes">
@@ -132,7 +139,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="link">
+                
+                <a href="detalhes8.html" class="link" data-categoria="Revistas" data-tags="Abuso, Ab-rogação">
                     <div class="publicacao-card">
                         <img src="assets/imagens/publicacao8.jpg">
                         <div class="detalhes">
@@ -140,138 +148,48 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao9.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Pensamentos quebrados, uma mente em declínio</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao10.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Introdução à economia e economia política</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao11.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Poesias e minicontos</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao12.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Canto dos Poetas. Vol.2</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao13.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Ciclo de seminários de acessibilidade</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao14.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Análise da formação em saúde</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao15.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Anatomia dentária</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao16.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Educação permanente em saúde</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao17.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Práticas pedagógicas em sala de aula</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao18.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Conhecimentose práticas dos profissionais de saúde</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao19.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">O guia do líder gestor</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao20.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">As experiências do pet-saúde</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao21.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">O universo consensual revelando a "nossa Búzios".</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao22.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Caminhos da bioética</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao23.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Retalhos de muitas vidas</h1>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="link">
-                    <div class="publicacao-card">
-                        <img src="assets/imagens/publicacao24.jpg">
-                        <div class="detalhes">
-                            <h1 class="titulo">Revista PLAMC. Vol.1</h1>
-                        </div>
-                    </div>
-                </a>
+                
             </section>
         </div>
     </main>
+
     <footer>
         <p>&copy; 2024 Editora Unifeso. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function filtrarPublicacoes() {
+            const palavraChave = document.getElementById('q').value.toLowerCase();
+            const categoriaSelecionada = Array.from(document.getElementById('tax-category').selectedOptions).map(option => option.value.toLowerCase()); 
+            const tagsSelecionadas = Array.from(document.getElementById('tags').selectedOptions).map(option => option.value.toLowerCase());
+
+            const publicacoes = document.querySelectorAll('.publicacao-card');
+
+            publicacoes.forEach(publicacao => {
+                const categoria = publicacao.closest('a').getAttribute('data-categoria').toLowerCase();
+                const tags = publicacao.closest('a').getAttribute('data-tags').toLowerCase().split(', ');
+
+                const correspondeCategoria = categoriaSelecionada.length === 0 || categoriaSelecionada.includes(categoria);
+                const correspondeTags = tagsSelecionadas.length === 0 || tagsSelecionadas.every(tag => tags.includes(tag));
+                const correspondePalavraChave = palavraChave === '' || publicacao.querySelector('.titulo').textContent.toLowerCase().includes(palavraChave);
+
+                if (correspondeCategoria && correspondeTags && correspondePalavraChave) {
+                    publicacao.closest('a').style.display = 'block';
+                } else {
+                    publicacao.closest('a').style.display = 'none';
+                }
+            });
+        }
+
+        function limparFiltros() {
+            document.getElementById('q').value = '';
+            document.getElementById('filter_date1').value = '';
+            document.getElementById('tax-category').value = '';
+            document.getElementById('tags').value = '';
+            filtrarPublicacoes();
+        }
+    </script>
+
 </body>
+
+</html>
