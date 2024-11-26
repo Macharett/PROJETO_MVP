@@ -43,7 +43,7 @@ Optamos por um MVP de protótipo funcional para validar rapidamente as principai
  ## Instruções de acesso ao MVP
  - Acesse o repositório https://github.com/Macharett/PROJETO_MVP.
  - Clique em Releases.
- - Selecione a versão "MPV - Editora Feso v1.0.1".
+ - Selecione a última versão disponível.
  - Baixe o Asset "Source code (zip)".
  - Extraia a pasta PROJETO_MVP-mvp.
  - Abra o arquivo index.html no navegador de sua preferência.
